@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-section{
+ background-image: url(../images/pria.png);
+}
+
+.container-navbar{  
+ display: flex;  
+ justify-content: space-between;
+ padding: 27px 165px;
+}
+
+.navbar{
+ display: flex;
+ gap: 28px;
+ align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar button {
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #FF4343;
+    color: #FFFFFF;
+}
