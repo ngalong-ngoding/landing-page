@@ -1,5 +1,4 @@
 body {
-    width: 1440px;
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
@@ -8,33 +7,36 @@ body {
     background-image: url(../images/pria.png);
     height: 714px;
     width: 1440;
+    background-size: cover;
 }
 
 .navbar-container {
     display: flex;
-    /* background-image: url(../images/pria.png); */
     color: white;
     width: 1136px;
     height: 64px;
     align-items: center;
     justify-content: space-between;
     padding-top: 14px;
-    padding-left: 114px;
+    padding-left: 50px;
+    margin: 0 auto;
+    padding: 27px 20px;
     /* padding-right: 165px; */
 }
 
-/* .logo {
-    margin-right: 10px;
+.logo {
+    margin-left: 10px;
+    margin-right: 200px;
     
-} */
+}
 
 .menu-container {
     display: flex;
     align-items: center;
     gap: 40px;
     color: white;
-    /* margin-right: 165px; */
-    /* margin-left: 295px; */
+    /* margin-right: 165px;
+    margin-left: 295px; */
 }
 
 .menu-container>a {
@@ -54,12 +56,14 @@ body {
 .text-section1 {
     color: white;
     margin-top: 134px;
-    margin-left: 407px;
+    margin-left: 300px;
     margin-right: 407px;
     width: 626px;
     height: 263px;
     text-align: center;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0 auto;
+    padding: 80px 20px;
+
 }
 
 .text-section1>h3 {
@@ -109,10 +113,12 @@ body {
 }
 
 .section-3 {
+    /* height: 1025px; */
     height: 1166px;
     background-color: #EEF3F9;
     text-align: center;
     color: #1F2C73;   
+    padding-top: 128px;
 }
 
 .section-3>hr {
@@ -120,15 +126,61 @@ body {
     width: 24px;
     height: 3px;
     background-color: #ff3b3b;
-    margin: 0 auto 50px;
+    /* margin: 0 auto 50px; */
+    margin-top: 53px;
+    margin-bottom: 82px;
     border-radius: 2px;
 }
 
 .sec-3-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 24px;
     max-width: 1100px;
     margin: 0 auto;
 
+}
+
+.diagonal {
+    max-width: 1255px;
+    height: 255px;
+    margin-top: 80px;
+}
+
+.section-4 {
+    display: flex;
+    height: 540px;
+    padding: 140px 152px 128px;
+    justify-content: space-between;
+}
+
+.text-kiri>h2 {
+    color: #1E2E50;
+    margin: 0;
+    font-size: 40px;
+}
+
+.text-kiri>b {
+    color: #1F2C73;
+    margin-bottom: 0;
+}
+
+.text-kiri>p {
+    color: #686868;
+}
+
+.text-kanan>h2 {
+    color: #1E2E50;
+    font-family: "Ole", cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+.text-kanan>b {
+    color: #1F2C73;
+    margin-bottom: 0;
+}
+
+.text-kanan>p {
+    color: #686868;
 }
