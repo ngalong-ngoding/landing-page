@@ -20,12 +20,12 @@ body {
     justify-content: center;
     padding-top: 14px;
     margin: 0 auto;
-    
+
 }
 
 .logo {
     margin-left: 30px;
-    margin-right: 200px; 
+    margin-right: 200px;
 }
 
 .menu-container {
@@ -38,7 +38,7 @@ body {
 .menu-container>a {
     color: white;
     text-decoration: none;
-}    
+}
 
 .menu-container>button {
     background-color: #FF4343;
@@ -90,7 +90,7 @@ body {
     color: #1F2C73;
 }
 
-.section-2>hr {
+.line {
     display: block;
     width: 24px;
     height: 3px;
@@ -109,20 +109,11 @@ body {
     height: 1025px;
     background-color: #EEF3F9;
     text-align: center;
-    color: #1F2C73;   
+    color: #1F2C73;
     padding-top: 128px;
     width: 100%;
 }
 
-.section-3>hr {
-    display: block;
-    width: 24px;
-    height: 3px;
-    background-color: #ff3b3b;
-    margin-top: 53px;
-    margin-bottom: 82px;
-    border-radius: 2px;
-}
 
 .sec-3-img {
     display: grid;
@@ -137,11 +128,9 @@ body {
     height: 195px;
     background: #ffffff;
 
-    clip-path: polygon(
-        0 100%,
-        100% 0,
-        100% 100%
-    );
+    clip-path: polygon(0 100%,
+            100% 0,
+            100% 100%);
 }
 
 .section-4 {
@@ -153,7 +142,7 @@ body {
 }
 
 .text-sect-4>h2 {
-    color: #1E2E50;
+    color: #1F2C73;
     margin: 0;
     font-size: 40px;
 }
@@ -170,4 +159,65 @@ body {
 .dribble {
     font-family: "Ole", cursive;
     font-size: 50px;
+}
+
+.section-5 {
+    background-color: #EEF3F9;
+    padding: 50px 20px;
+}
+
+.careers {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.judul {
+    color: #1F2C73;
+}
+
+.line-sect-5 {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #ff3b3b;
+    border-radius: 2px;
+}
+
+.careers>p {
+    max-width: 520px;
+    font-size: 15px;
+    color: #6b6b6b;
+    padding-top: 20px;
+}
+
+.city {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding-right: 50px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.city-title {
+    color: #1F2C73;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-sect-5 {
+    background-color: #FF4343;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 30px;
+}
+
+.section-6 {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
