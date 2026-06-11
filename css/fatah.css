@@ -12,6 +12,9 @@
     --color-primary-active: #c80d0d;
     --color-dark-blue: #1F2C73;
     --color-white: #FFFFFF;
+    --color-grey: #EEF3F9;
+    --color-secondary: #686868;
+    --color-secondary-80: #5A6C90;
     /* Font Weight */
     --weight-medium: 500;
     --weight-semibold: 600;
@@ -62,8 +65,11 @@
     }
 }
 
-/* Hero section class */
+.container {
+    padding: 0px 152px;
+}
 
+/* Hero section class */
 .hero {
     background-image: url("./../images/pria.png");
     background-repeat: no-repeat;
@@ -82,60 +88,62 @@
         inset: 0;
         z-index: -1;
     }
-}
 
-.hero__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    .hero__nav-group {
+
+    .hero__header {
         display: flex;
-        gap: 28px;
-    }
-
-    nav {
-        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 40px;
 
-        a {
-            font-size: 16px;
-            font-weight: 500;
-            color: var(--color-white);
-            text-decoration: none;
+        .hero__nav-group {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--color-white);
+                text-decoration: none;
+            }
         }
     }
-}
 
-.hero__content {
-    color: var(--color-white);
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 50%;
-    margin: 0 auto;
-    text-align: center;
+    .hero__content {
+        color: var(--color-white);
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 50%;
+        margin: 0 auto;
+        text-align: center;
 
-    span {
-        font-size: 12px;
-        font-weight: var(--weight-semibold);
-    }
+        span {
+            font-size: 12px;
+            font-weight: var(--weight-semibold);
+        }
 
-    h1 {
-        font-size: 52px;
-        font-weight: var(--weight-bold);
-        line-height: 75px;
-    }
+        h1 {
+            font-size: 52px;
+            font-weight: var(--weight-bold);
+            line-height: 75px;
+        }
 
-    .btn {
-        font-size: 14px;
-        font-weight: var(--weight-semibold);
-        padding: 14px 36px;
+        .btn {
+            font-size: 14px;
+            font-weight: var(--weight-semibold);
+            padding: 14px 36px;
+        }
     }
 }
 
@@ -154,5 +162,79 @@
         font-size: 16px;
         line-height: 34.5px;
         font-weight: var(--weight-medium);
+    }
+}
+
+/* Featured project section */
+.project {
+    background-color: var(--color-grey);
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .project__image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+
+    .project__triangle {
+        background-color: var(--color-white);
+        height: 192px;
+        width: 100%;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        margin-bottom: -1px;
+    }
+}
+
+/* Testimonial section */
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+    padding-top: 160px;
+    padding-bottom: 128px;
+
+    .testimonial__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .testimonial__title {
+            color: var(--color-dark-blue);
+        }
+
+        .testimonial__description {
+            font-size: 20px;
+            line-height: 38.5px;
+            font-weight: var(--weight-medium);
+            color: var(--color-secondary);
+        }
+
+        .testimonial__user {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .testimonial__username {
+                font-size: 16px;
+                color: var(--color-dark-blue);
+                font-weight: var(bold);
+            }
+
+            .testimonial__role {
+                font-size: 16px;
+                font-weight: var(--weight-medium);
+                color: var(--color-secondary-80);
+            }
+        }
     }
 }
