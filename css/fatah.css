@@ -10,6 +10,7 @@
     --color-primary: #FF4343;
     --color-primary-hover: #ed1515;
     --color-primary-active: #c80d0d;
+    --color-dark-blue: #1F2C73;
     --color-white: #FFFFFF;
     /* Font Weight */
     --weight-medium: 500;
@@ -35,6 +36,29 @@
 
     &:active {
         background-color: var(--color-primary-active);
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: var(--weight-semibold);
+    color: var(--color-dark-blue);
+}
+
+.divider {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 4px;
+        background-color: var(--color-primary);
+        border-radius: 999px;
     }
 }
 
@@ -112,5 +136,23 @@
         font-size: 14px;
         font-weight: var(--weight-semibold);
         padding: 14px 36px;
+    }
+}
+
+/* Welcome section */
+.welcome {
+    padding: 48px 0px 65px;
+    max-width: 640px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    p {
+        font-size: 16px;
+        line-height: 34.5px;
+        font-weight: var(--weight-medium);
     }
 }
