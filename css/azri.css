@@ -84,12 +84,14 @@ body {
 
     .text-section1>button {
         background-color: #FF4343;
+        font-weight: bold;
         color: white;
         border-radius: 4px;
         border: none;
         padding: 14px 28px;
         cursor: pointer;
         transition-duration: 200ms;
+        
     }
 
     .text-section1>button:hover {
@@ -121,6 +123,7 @@ body {
 
 .section-2>p {
     font-size: 16px;
+    color: #3D3D3D;
     line-height: 34.5px;
     font-weight: 450px;
 }
@@ -159,12 +162,13 @@ body {
     margin: 0 auto;
     padding: 120px 20px;
     display: flex;
+    justify-content: center;
     gap: 60px;
 }
 
 .text-sect-4>h2 {
     color: #1F2C73;
-    margin: 0;
+    margin-bottom: 35px;
     font-size: 40px;
 }
 
@@ -174,12 +178,12 @@ body {
 }
 
 .text-sect-4>p {
-    color: #686868;
+    color: rgba(90, 108, 144, 0.8);
+    margin-top: 0;
 }
 
 .dribble {
-    font-family: "Ole", cursive;
-    font-size: 50px;
+    font-family: "Pacifico", cursive;
 }
 
 .section-5 {
@@ -215,7 +219,7 @@ body {
 
 .city {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 48px auto;
     /* padding-right: 50px; */
     display: flex;
     justify-content: space-between;
@@ -227,7 +231,7 @@ body {
     font-size: 20px;
     font-weight: 800;
     display: flex;
-    gap: 135px;
+    gap: 64px;
 }
 
 
@@ -272,6 +276,12 @@ body {
 .caption {
     font-size: 20px;
     font-family: "League Spartan", sans-serif;
+    color: #1E2E50;
+    font-weight: 500;
+}
+.more-caption {
+    color: #1f335f;
+    font-size: 14px;
 }
 
 .profile {
@@ -312,6 +322,8 @@ body {
 .title-8 {
     font-size: 15px;
     text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
     margin-top: 68px;
     margin-bottom: 32px;
 }
@@ -349,16 +361,17 @@ body {
     margin-top: 64px;
 }
 
-.footer-links {
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    gap: 32px;
+.copyright {
+    font-size: 14px;
+    margin-bottom: 0;
 }
 
-.footer-links>p {
-    color: #fff;
+.footer-links {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+     color: #fff;
     text-decoration: none;
-    margin: 0;
+    font-size: 14px;
 }
