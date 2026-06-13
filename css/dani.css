@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+.section-1 {
+    background-image: url(../images/pria.png);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 165px;
+}
+
+.logo {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.menu-container {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    color: #FFFFFF; 
+}
+
+.btn-id {
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #FF4343;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content h3 {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 5.5px;
+}
+
+.content h1 {
+    margin-bottom: 25px;
+    line-height: 75px;
+    font-size: 52px;
+    max-width: 700px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
