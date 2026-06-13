@@ -69,9 +69,10 @@
 }
 
 .container {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    /* margin: 0 auto; */
+    /* padding: 0px 152px; */
 }
 
 /* Hero section class */
@@ -299,4 +300,9 @@
             }
         }
     }
+}
+
+/* Blog section */
+.blog {
+    padding: 128px 0px;
 }
