@@ -26,6 +26,11 @@
     --weight-extrabold: 800;
 }
 
+/* Element class */
+img {
+    max-width: 100%;
+}
+
 /* Component class */
 .btn {
     padding: 8px 16px;
@@ -73,7 +78,7 @@
     max-width: 1440px;
     margin: 0 auto;
     /* margin: 0 auto; */
-    /* padding: 0px 152px; */
+    padding: 0px 152px;
 }
 
 /* Hero section class */
@@ -155,8 +160,10 @@
 
 /* Welcome section */
 .welcome {
-    padding: 48px 0px 65px;
-    /* max-width: 640px; */
+    padding-top: 48px;
+    padding-bottom: 65px;
+    /* padding: 48px 0px 65px; */
+    max-width: 80%;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -305,7 +312,8 @@
 
 /* Blog section */
 .blog {
-    padding: 128px 0px;
+    padding-top: 128px;
+    padding-bottom: 128px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -439,6 +447,35 @@
                     font-weight: var(--weight-medium);
                 }
             }
+        }
+    }
+
+    .footer__icons {
+        display: flex;
+        gap: 16px;
+
+        .footer__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            background-color: var(--color-primary);
+            border-radius: 999px;
+        }
+    }
+
+    .footer__copyright {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: var(--weight-medium);
+
+        .terms {
+            display: flex;
+            gap: 32px;
         }
     }
 }
