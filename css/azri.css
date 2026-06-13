@@ -245,6 +245,7 @@ body {
 }
 .caption {
     font-size: 20px;
+    font-family: "League Spartan", sans-serif;
 }
 
 .profile {
@@ -263,4 +264,14 @@ body {
     color: #ffffff;
     padding-top: 100px;
     font-size: 30px;
+}
+
+.text-section7>h1 {
+    font-weight: 500;
+}
+
+.section-8 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
