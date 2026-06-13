@@ -33,6 +33,10 @@
 }
 
 /* Element class */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-spartan);
 }
@@ -137,10 +141,30 @@ img {
             gap: 40px;
 
             a {
+                position: relative;
                 font-size: 16px;
                 font-weight: 500;
                 color: var(--color-white);
                 text-decoration: none;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: var(--color-white);
+                    transition: width 200ms ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                &:active {
+                    opacity: 0.6;
+                }
             }
         }
     }
