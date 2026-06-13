@@ -41,6 +41,10 @@ img {
     transition-duration: 200ms;
     font-size: 16px;
     font-weight: var(--weight-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
     &:hover {
         background-color: var(--color-primary-hover);
@@ -297,6 +301,9 @@ img {
                 color: var(--color-dark-blue);
                 font-weight: var(--weight-semibold);
                 line-height: 24px;
+                display: flex;
+                align-items: center;
+                gap: 64px;
             }
 
             li {
@@ -384,7 +391,10 @@ img {
     }
 
     .container {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         height: 100%;
 
         h1 {
@@ -458,9 +468,11 @@ img {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px;
             background-color: var(--color-primary);
             border-radius: 999px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
         }
     }
 
