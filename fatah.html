@@ -9,7 +9,7 @@
 <body>
   <!-- Hero section -->
   <section class="hero">
-    <header class="hero__header">
+    <header class="hero__header container">
       <!-- Logo -->
       <img src="./images/logo.png" alt="logo-image" />
       <!-- Navigator -->
@@ -33,7 +33,7 @@
     </div>
   </section>
   <!-- Welcome section -->
-  <section class="welcome">
+  <section class="welcome container">
     <h2 class="title">Welcome to the Inertia Agency</h2>
     <div class="divider"></div>
     <p>Inertia was founded to help developers and designers with their projects by offering great quality products. By
@@ -41,12 +41,12 @@
       without spending a lot of time and money.</p>
   </section>
   <!-- Featured project section -->
-  <section class="project container">
-    <div>
+  <section class="project">
+    <div class="project__title">
       <h2 class="title">Featured Projects</h2>
       <div class="divider"></div>
     </div>
-    <div class="project__image">
+    <div class="project__image  container  ">
       <img src="./images/gelas-kopi.png" alt="gelas kopi">
       <img src="./images/buku-pulpen.png" alt="buku pulpen">
       <img src="./images/tatakan.png" alt="tatakan">
@@ -79,6 +79,43 @@
         <h6 class="testimonial__username">David Gilmour</h6>
         <span class="testimonial__role">Co-Founder</span>
       </div>
+    </div>
+  </section>
+  <!-- Carreers section -->
+  <section class="career">
+    <div class="container">
+      <div class="career__content">
+        <h2 class="title">Careers at Inertia</h2>
+        <div class="divider"></div>
+        <p class="career__description">Join us in our quest to bring the best experiences through design and technology
+          to
+          the world, our most
+          important vision is to have the best work culture possible.</p>
+      </div>
+      <div class="career__locations">
+        <div class="career__location">
+          <h5>Dublin</h5>
+          <li>Head of Marketing</li>
+          <li>UX Designer</li>
+          <li>Senior Programmer</li>
+          <li>Mobile UI Designer</li>
+          <li>Lead Product Designer</li>
+        </div>
+        <div class="career__location">
+          <h5>Amsterdam</h5>
+          <li>Head of Operations</li>
+          <li>Mobile Engineer</li>
+          <li>Animation Designer</li>
+        </div>
+        <div class="career__location">
+          <h5>Mexico City</h5>
+          <li>Head of Motion Design</li>
+          <li>Graphics Engineer</li>
+          <li>Senior UI Designer</li>
+          <li>Backend Engineer</li>
+        </div>
+      </div>
+      <button class="btn">Careers At Intertia</button>
     </div>
   </section>
 </body>
