@@ -125,6 +125,10 @@ img {
         .hero__nav-group {
             display: flex;
             gap: 28px;
+
+            .btn {
+                text-decoration: none;
+            }
         }
 
         nav {
