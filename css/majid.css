@@ -101,8 +101,8 @@ body {
 .bg-section-2 {
     background-color: #EEF3F9;
     padding-top: 128px;
-    padding-bottom: 300px;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+    padding-bottom: 300px;  
 }
 
 
@@ -116,3 +116,120 @@ body {
     margin: 0 auto;
     padding-top: 64px;
 } 
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    z-index: 1;
+}
+
+
+.testimonial {
+    margin: 160px 0;
+}
+
+
+.container-testimonial {
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 64px;
+    
+}
+
+.content-testimonial i{
+    font-size: 50px;
+    color: #1F2C73;
+}
+
+.container-testimonial p {
+ font-size: 20px;
+ color: #686868;
+ line-height: 38px;
+ font-weight: 500;
+ margin: 24px 0;
+}
+
+.container-testimonial span {
+    color: #1F2C73;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-testimonial label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A6C90CC ;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bg-section-3 {
+    background-color:  #EEF3F9;
+    padding: 96px 152px;
+    
+}
+
+.text-content >.text-content-2 {
+    display: contents;
+    
+}
+
+.container-careers p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #424242CC;
+    width: 500px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 46px;
+}
+
+.icon-img {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.icon-img i {
+    color: #1E2E5066;
+}
+
+.icon-img h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1F2C73;
+}
+
+.container-location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #040404;
+}
+
+.line-2  {
+    width: 40px;
+    height: 5px;
+    background-color: #FF4343;
+    margin: 24px 16px 0 0;
+    border-radius: 8px;
+}
+
