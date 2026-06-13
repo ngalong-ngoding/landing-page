@@ -46,6 +46,12 @@
     text-align: none;
     color:white;
     text-decoration: none;
+
+    a{
+        color:#EEF3F9;
+        text-decoration: none;
+
+    }
 }
 
 .content{
