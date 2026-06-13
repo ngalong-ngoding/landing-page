@@ -356,3 +356,45 @@
 
     }
 }
+
+/* Hire section */
+.hire {
+    background-image: url(../images/pria-berjanggut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    padding: 135px 0px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.08);
+        inset: 0;
+        z-index: -1;
+    }
+
+    .container {
+        text-align: center;
+        height: 100%;
+
+        h1 {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: var(--weight-semibold);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: var(--weight-medium);
+            margin-bottom: 48px;
+        }
+
+        .btn {
+            padding: 16px 24px;
+        }
+    }
+}
