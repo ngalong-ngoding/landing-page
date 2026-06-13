@@ -13,6 +13,7 @@
     --color-dark-blue: #1F2C73;
     --color-white: #FFFFFF;
     --color-grey: #EEF3F9;
+    --color-grey-900: #212529;
     --color-secondary: #686868;
     --color-secondary-80: #5A6C90;
     --color-secondary-90: #424242;
@@ -305,4 +306,53 @@
 /* Blog section */
 .blog {
     padding: 128px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .blog__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        .blog__card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .blog__card-title {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: var(--weight-semibold);
+                color: var(--color-dark-blue);
+            }
+
+            .blog__card-body {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .blog__card-desc {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: var(--weight-medium);
+                    color: var(--color-secondary-80);
+                }
+
+                .blog__card-footer {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .blog__author {
+                        font-size: 12px;
+                        line-height: 16px;
+                        font-weight: var(--weight-semibold);
+                        color: var(--color-grey-900);
+                    }
+                }
+            }
+        }
+
+    }
 }
