@@ -1,6 +1,6 @@
  /* section 1 */
 .foto-pria{
-    background-image: url("images/pria.png");
+    background-image: url("../images/pria.png");
     height:714px;
     font-family: 'poppins', sans-serif;
     color:aliceblue;
