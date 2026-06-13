@@ -102,9 +102,7 @@ body {
     background-color: #EEF3F9;
     padding-top: 128px;
     position: relative;
-    padding-bottom: 300px;
- 
-    
+    padding-bottom: 300px;  
 }
 
 
@@ -132,8 +130,10 @@ body {
 
 
 .testimonial {
-    margin-top: 160px;
+    margin: 160px 0;
 }
+
+
 .container-testimonial {
     display: flex;
     max-width: 1100px;
@@ -151,6 +151,23 @@ body {
 .container-testimonial p {
  font-size: 20px;
  color: #686868;
+ line-height: 38px;
+ font-weight: 500;
+ margin: 24px 0;
+}
+
+.container-testimonial span {
+    color: #1F2C73;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-testimonial label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A6C90CC ;
 }
 
 .info {
@@ -158,3 +175,61 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+.bg-section-3 {
+    background-color:  #EEF3F9;
+    padding: 96px 152px;
+    
+}
+
+.text-content >.text-content-2 {
+    display: contents;
+    
+}
+
+.container-careers p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #424242CC;
+    width: 500px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 46px;
+}
+
+.icon-img {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.icon-img i {
+    color: #1E2E5066;
+}
+
+.icon-img h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1F2C73;
+}
+
+.container-location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #040404;
+}
+
+.line-2  {
+    width: 40px;
+    height: 5px;
+    background-color: #FF4343;
+    margin: 24px 16px 0 0;
+    border-radius: 8px;
+}
+
