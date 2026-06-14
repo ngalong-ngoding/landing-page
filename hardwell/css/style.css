@@ -9,7 +9,7 @@
     --color-dark-950: #0E1017;
 
     /* Neutral (grey scale) */
-    --color-neutral-50:  #F3F7F5;
+    --color-neutral-50: #F3F7F5;
     --color-neutral-100: #F2F2F2;
     --color-neutral-300: #81838C;
     --color-neutral-400: #7B7D84;
@@ -19,13 +19,19 @@
     --color-white: #FFFFFF;
 
     /* Accent */
-    --color-accent-green:  #9CD161;
+    --color-accent-green: #9CD161;
     --color-accent-yellow: #F5AD0D;
     --color-accent-orange: #FB690C;
 
     /* Font Weight */
-    --weight-medium:    500;
-    --weight-semibold:  600;
-    --weight-bold:      700;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
     --weight-extrabold: 800;
+
+
+    /* Font family */
+    --font-inter: "Inter", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 }
