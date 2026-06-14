@@ -37,3 +37,55 @@
     --font-open-sans: "Open Sans", sans-serif;
     --font-epilogue: "Epilogue", sans-serif;
 }
+
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 135px;
+    /* border: solid black 2px; */
+
+    .nav-group {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+            color: var(--color-neutral-950);
+            font-family: var(--font-open-sans);
+            font-size: 16px;
+            
+        }
+    }
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: var(--color-neutral-950);
+    color: var(--color-white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    font-size: 20px;
+    font-weight: var(--weight-medium);
+    font-family: var(--font-open-sans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border: none;
+
+     &:hover {
+        background-color: var(--color-primary);
+    }
+
+    &:active {
+        background-color: var(--color-neutral-950);
+    }
+}
