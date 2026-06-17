@@ -16,6 +16,7 @@
     --color-neutral-500: #69697B;
     --color-neutral-800: #333333;
     --color-neutral-950: #111111;
+    --color-neutral-900: #000000;
     --color-white: #FFFFFF;
 
     /* Accent */
@@ -38,11 +39,57 @@
     --font-epilogue: "Epilogue", sans-serif;
 }
 
+/* ClASS COMPONENT */
+.btn {
+    padding: 16px 26px;
+    background-color: var(--color-neutral-950);
+    color: var(--color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    font-size: 20px;
+    font-weight: var(--weight-semibold);
+    font-family: var(--font-open-sans);
+    gap: 10px;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background-color: var(--color-neutral-800);
+    }
+
+    &:active {
+        background-color: var(--color-neutral-900);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 135px;
+    gap: 100px;
+
+    nav {
+        display: flex;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+            color: var(--color-neutral-950);
+            font-family: var(--font-open-sans);
+            font-size: 16px;
+
+        }
+    }
+}
+
 
 /* Famous clients */
 .famous {
