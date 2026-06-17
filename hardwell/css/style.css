@@ -65,3 +65,63 @@
         align-items: start;
     }
 }
+
+/* Analyze and improve */
+.analyze {
+    display: flex;
+    justify-content: center;
+    gap: 61px;
+    margin: 140px 0;
+
+
+    h1 {
+        font-family: var(--font-epilogue);
+        font-size: 56px;
+        font-weight: var(--weight-bold);
+        color: var(--color-neutral-800);
+    }
+
+    p {
+        font-family: var(--font-epilogue);
+        font-size: 16px;
+        font-weight: var(--weight-medium);
+        color: var(--color-neutral-400);
+
+        line-height: 32px;
+    }
+
+    .container__analyze__text {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+
+        .icon-fitur {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .circle {
+                color: var(--color-accent-green);
+                font-size: 24px;
+            }
+        }
+
+
+
+        span {
+            font-family: var(--font-epilogue);
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: var(--weight-medium);
+            color: var(--color-neutral-800);
+        }
+
+    }
+}
