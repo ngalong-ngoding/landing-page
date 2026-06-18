@@ -16,6 +16,7 @@
     --color-neutral-500: #69697B;
     --color-neutral-800: #333333;
     --color-neutral-950: #111111;
+    --color-neutral-900: #000000;
     --color-white: #FFFFFF;
 
     /* Accent */
@@ -28,6 +29,7 @@
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+    --weight-regular:400;
 
 
     /* Font family */
@@ -64,12 +66,13 @@ width:65px;
 height:65px;
 position: relative;
 
+
 .ikon{
     color:var(--color-dark-700);
     font-size:52.5px;
     position:absolute;
-    right:0;
-    bottom: 0;
+    right:-10;
+    bottom: -5;
 }
 }
 
@@ -82,9 +85,92 @@ position: relative;
 
     h5{
         font-size: 22px;
+        font-weight: var(--weight-semibold);
+        line-height:34px;
+        margin-bottom: 12px;
+        margin-top: 30px;
     }
 
     p{
+        
         font-size: 16px;
+        font-weight: var(--weight-regular);
+        font-family: var(--font-inter);
+        line-height: 28px;
+
+    }
+
+
+/* ClASS COMPONENT */
+.btn {
+    padding: 16px 26px;
+    background-color: var(--color-neutral-950);
+    color: var(--color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    font-size: 20px;
+    font-weight: var(--weight-semibold);
+    font-family: var(--font-open-sans);
+    gap: 10px;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background-color: var(--color-neutral-800);
+    }
+
+    &:active {
+        background-color: var(--color-neutral-900);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 135px;
+    gap: 100px;
+
+    nav {
+        display: flex;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+            color: var(--color-neutral-950);
+            font-family: var(--font-open-sans);
+            font-size: 16px;
+
+        }
+    }
+}
+
+
+/* Famous clients */
+.famous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: var(--weight-bold);
+        color: var(--color-neutral-800);
+        font-family: var(--font-epilogue);
+        margin-bottom: 35px;
+    }
+
+    .famous__clients {
+        display: flex;
+        gap: 54px;
+        align-items: start;
     }
 }
