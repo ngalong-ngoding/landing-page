@@ -29,6 +29,7 @@
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+    --weight-regular:400;
 
 
     /* Font family */
@@ -37,6 +38,67 @@
     --font-poppins: "Poppins", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
     --font-epilogue: "Epilogue", sans-serif;
+}
+
+/* sec 3 */
+.exp-service{
+padding:50px 60px;
+font-family: var(--font-epilogue);
+}
+
+.service{
+text-align: center;
+color:#333333;
+
+h1{
+    font-size: 56px;
+}
+
+p{
+    font-size: 20px;
+}
+}
+
+.content-ikon{
+background-color:#EA3D3C4D;
+border-radius: 50%;
+width:65px;
+height:65px;
+position: relative;
+
+
+.ikon{
+    color:var(--color-dark-700);
+    font-size:52.5px;
+    position:absolute;
+    right:-10;
+    bottom: -5;
+}
+}
+
+.card{
+    margin-top:68px;
+    display:flex;
+    justify-content: space-between;
+    gap:104px;
+    color:#25373F;
+
+    h5{
+        font-size: 22px;
+        font-weight: var(--weight-semibold);
+        line-height:34px;
+        margin-bottom: 12px;
+        margin-top: 30px;
+    }
+
+    p{
+        
+        font-size: 16px;
+        font-weight: var(--weight-regular);
+        font-family: var(--font-inter);
+        line-height: 28px;
+
+    }
 }
 
 /* ClASS COMPONENT */
