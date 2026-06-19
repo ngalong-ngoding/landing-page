@@ -90,6 +90,92 @@
     }
 }
 
+.about {
+    .about___bg {
+
+        display: flex;
+        align-items: center;
+        padding-left: 144px;
+        padding-right: 136px;
+        justify-content: space-between;
+
+        .about___images {
+
+            position: relative;
+
+            .box {
+                position: absolute;
+                bottom: -40px;
+                left: 308px;
+                background-color: var(--color-primary);
+                color: var(--color-white);
+                font-family: var(--font-inter);
+                width: 303px;
+                height: 225px;
+                padding: 36px 50px;
+                border-radius: 5px;
+
+                h1 {
+                    font-size: 70px;
+                    letter-spacing: -2px;
+
+                    img {
+                        background-color: var(--color-white);
+                        border-radius: 99px;
+                        border: 1px solid blue;
+                        width: 36px;
+                        height: 36px;
+                        vertical-align: middle;
+                    }
+                }
+                p{
+                    line-height: 36px;
+                    font-size: 24px;
+                }
+
+
+            }
+        }
+
+        .about___content {
+            h3 {
+                font-family: var(--font-epilogue);
+                color: var(--color-neutral-800);
+                font-size: 16px;
+                letter-spacing: 3px;
+                line-height: 32px;
+                margin-bottom: 20px;
+                opacity: 40%;
+            }
+
+            h1 {
+                font-family: var(--font-epilogue);
+                color: var(--color-neutral-800);
+                font-size: 56px;
+                margin-bottom: 28px;
+                line-height: 64px;
+            }
+
+            p {
+                font-family: var(--font-epilogue);
+                color: var(--color-neutral-800);
+                size: 16px;
+                margin-bottom: 31px;
+                line-height: 32px;
+                opacity: 50%;
+            }
+
+            h5 {
+                font-family: var(--font-epilogue);
+                color: var(--color-neutral-800);
+                size: 16px;
+                line-height: 32px;
+            }
+        }
+    }
+
+}
+
 
 /* Famous clients */
 .famous {
