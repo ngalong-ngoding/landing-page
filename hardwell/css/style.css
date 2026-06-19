@@ -90,6 +90,77 @@
     }
 }
 
+/* Discover */
+
+.discover {
+
+    justify-content: center;
+
+
+
+    .discover___container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .discover___contain1 {
+
+            align-items: center;
+
+            h1 {
+                font-family: var(--font-epilogue);
+                font-size: 56px;
+                font-weight: var(--weight-semibold);
+                line-height: 64px;
+                align-items: center;
+                margin-bottom: 26px;
+            }
+
+            p {
+                text-align: center;
+                font-family: var(--font-epilogue);
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 75px;
+            }
+        }
+
+        .discover___contain2 {
+            padding: 86px 253px 86px 266px;
+            height: 500px;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            display: flex;
+            align-items: center;
+            background-color: var(--color-primary);
+            justify-content: space-between;
+
+            .contain2___text {
+
+                text-align: left;
+
+                p {
+                    color: var(--color-white);
+                    font-family: var(--font-epilogue);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+
+                h2 {
+                    margin-top: 17px;
+                    margin-bottom: 15px;
+                    color: var(--color-white);
+                    font-family: var(--font-epilogue);
+                    size: 40px;
+                    line-height: 48px;
+                }
+            }
+
+        }
+    }
+}
 
 /* Famous clients */
 .famous {
