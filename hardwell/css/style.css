@@ -112,3 +112,61 @@
         align-items: start;
     }
 }
+
+/* TEAM MEMBERS */
+.team-members {
+    font-family: var(--font-epilogue);
+
+    .title-description {
+        text-align: center;
+
+        h1 {
+            font-size: 56px;
+            font-weight: var(--weight-bold);
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--color-neutral-800);
+            line-height: 32px;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 70px;
+        }
+    }
+
+    .foto-members {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 134px;
+        padding-right: 136px;
+        margin-bottom: 190px;
+
+        img {
+            width: 270px;
+            height: 224px;
+            border: 1px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: var(--weight-bold);
+        margin-bottom: 5px;
+        line-height: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 0.5);
+        line-height: 32px;
+    }
+}
