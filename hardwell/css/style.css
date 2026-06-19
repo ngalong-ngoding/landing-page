@@ -40,6 +40,7 @@
     --font-epilogue: "Epilogue", sans-serif;
 }
 
+
 /* sec 3 */
 .exp-service{
 padding:50px 60px;
@@ -98,6 +99,64 @@ position: relative;
         font-family: var(--font-inter);
         line-height: 28px;
 
+    }
+}
+
+/* OUR COMPONENT */
+.testimonials-title{
+text-align: center;
+font-family: var(--font-poppins);
+
+h1{
+    font-weight: 700;
+    font-size:40px;
+    line-height: 100%;
+}
+p{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: var(--weight-regular);
+    margin-top:20px;
+    color:var(--color-neutral-500);
+}
+}
+
+.testimonials-list{
+    display:flex;   
+    justify-content: space-between;
+    padding-left: 139px;
+    padding-right: 112px;
+    margin-top:48px;
+    gap:39px;
+}
+
+.testimonials-card{
+    font-weight:var(--weight-regular);
+    font-size:16px;
+    line-height:33px;
+
+    p{
+        color:var(--color-neutral-500);
+    }
+
+    .profil{
+        margin-top:29px;
+        display:flex;
+        align-items: center;
+        gap:15px;
+
+        h4{
+            font-weight:var(--weight-medium);
+            color:var(--color-dark-800);
+            font-size: 18px;
+            line-height: 100%;
+        }
+
+        p{
+            font-weight: var(--weight-regular);
+            font-size:14px;
+            line-height:100%;
+        }
     }
 }
 
