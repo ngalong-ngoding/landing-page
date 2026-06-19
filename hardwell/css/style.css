@@ -95,18 +95,25 @@
 
         display: flex;
         align-items: center;
-        padding-left: 135px;
-        padding-right: 161px;
+        padding-left: 144px;
+        padding-right: 136px;
         justify-content: space-between;
 
         .about___images {
+
+            position: relative;
+
             .box {
+                position: absolute;
+                bottom: -40px;
+                left: 308px;
                 background-color: var(--color-primary);
                 color: var(--color-white);
                 font-family: var(--font-inter);
                 width: 303px;
                 height: 225px;
                 padding: 36px 50px;
+                border-radius: 5px;
 
                 h1 {
                     font-size: 70px;
@@ -115,9 +122,14 @@
                     img {
                         background-color: var(--color-white);
                         border-radius: 99px;
+                        border: 1px solid blue;
+                        width: 36px;
+                        height: 36px;
+                        vertical-align: middle;
                     }
                 }
                 p{
+                    line-height: 36px;
                     font-size: 24px;
                 }
 
@@ -133,6 +145,7 @@
                 letter-spacing: 3px;
                 line-height: 32px;
                 margin-bottom: 20px;
+                opacity: 40%;
             }
 
             h1 {
@@ -148,6 +161,8 @@
                 color: var(--color-neutral-800);
                 size: 16px;
                 margin-bottom: 31px;
+                line-height: 32px;
+                opacity: 50%;
             }
 
             h5 {
