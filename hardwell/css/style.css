@@ -11,6 +11,7 @@
     /* Neutral (grey scale) */
     --color-neutral-50: #F3F7F5;
     --color-neutral-100: #F2F2F2;
+    --color-neutral-150: #DDDDDD;
     --color-neutral-300: #81838C;
     --color-neutral-400: #7B7D84;
     --color-neutral-500: #69697B;
@@ -111,4 +112,85 @@
         gap: 54px;
         align-items: start;
     }
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+
+    img {
+        display: block;
+        width: 575px;
+        height: 472px;
+        gap: 0;
+    }
+}
+
+.statistik {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 140px;
+    gap: 30px;
+
+    .revenue {
+        border: 1px solid var(--color-neutral-150);
+        border-radius: 8px;
+        width: 370px;
+        height: 224px;
+        /* padding: 59px; */
+        font-family: var(--font-epilogue);
+        text-align: center;
+        color: var(--color-accent-green);
+
+    }
+
+    .projects {
+        border: 1px solid var(--color-neutral-150);
+        border-radius: 8px;
+        width: 370px;
+        height: 224px;
+        font-family: var(--font-epilogue);
+        text-align: center;
+        /* padding: 59px; */
+        color: var(--color-accent-yellow);
+    }
+
+    .uptime {
+        border: 1px solid var(--color-neutral-150);
+        border-radius: 8px;
+        width: 370px;
+        height: 224px;
+        color: var(--color-accent-orange);
+        font-family: var(--font-epilogue);
+        text-align: center;
+        /* padding: 59px; */
+    }
+}
+
+.content-statistik {
+    display: inline-flex;
+    ;
+    align-items: center;
+
+    .num {
+        font-size: 56px;
+        font-weight: var(--weight-bold);
+        margin-top: 59px;
+    }
+
+    .symb {
+        font-size: 40px;
+        font-weight: var(--weight-bold);
+        margin-top: 59px;
+
+    }
+
+}
+
+.description-statistik {
+    font-size: 20px;
+    margin-top: 10px;
 }
