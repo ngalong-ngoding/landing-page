@@ -29,6 +29,7 @@
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+    --weight-regular:400;
 
 
     /* Font family */
@@ -37,6 +38,126 @@
     --font-poppins: "Poppins", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
     --font-epilogue: "Epilogue", sans-serif;
+}
+
+
+/* sec 3 */
+.exp-service{
+padding:50px 60px;
+font-family: var(--font-epilogue);
+}
+
+.service{
+text-align: center;
+color:#333333;
+
+h1{
+    font-size: 56px;
+}
+
+p{
+    font-size: 20px;
+}
+}
+
+.content-ikon{
+background-color:#EA3D3C4D;
+border-radius: 50%;
+width:65px;
+height:65px;
+position: relative;
+
+
+.ikon{
+    color:var(--color-dark-700);
+    font-size:52.5px;
+    position:absolute;
+    right:-10;
+    bottom: -5;
+}
+}
+
+.card{
+    margin-top:68px;
+    display:flex;
+    justify-content: space-between;
+    gap:104px;
+    color:#25373F;
+
+    h5{
+        font-size: 22px;
+        font-weight: var(--weight-semibold);
+        line-height:34px;
+        margin-bottom: 12px;
+        margin-top: 30px;
+    }
+
+    p{
+        
+        font-size: 16px;
+        font-weight: var(--weight-regular);
+        font-family: var(--font-inter);
+        line-height: 28px;
+
+    }
+}
+
+/* OUR COMPONENT */
+.testimonials-title{
+text-align: center;
+font-family: var(--font-poppins);
+
+h1{
+    font-weight: 700;
+    font-size:40px;
+    line-height: 100%;
+}
+p{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: var(--weight-regular);
+    margin-top:20px;
+    color:var(--color-neutral-500);
+}
+}
+
+.testimonials-list{
+    display:flex;   
+    justify-content: space-between;
+    padding-left: 139px;
+    padding-right: 112px;
+    margin-top:48px;
+    gap:39px;
+}
+
+.testimonials-card{
+    font-weight:var(--weight-regular);
+    font-size:16px;
+    line-height:33px;
+
+    p{
+        color:var(--color-neutral-500);
+    }
+
+    .profil{
+        margin-top:29px;
+        display:flex;
+        align-items: center;
+        gap:15px;
+
+        h4{
+            font-weight:var(--weight-medium);
+            color:var(--color-dark-800);
+            font-size: 18px;
+            line-height: 100%;
+        }
+
+        p{
+            font-weight: var(--weight-regular);
+            font-size:14px;
+            line-height:100%;
+        }
+    }
 }
 
 /* ClASS COMPONENT */
