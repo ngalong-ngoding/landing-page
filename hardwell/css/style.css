@@ -133,12 +133,12 @@
                 gap: 16px;
             }
 
-            .analyze-improve__item-icon {
+            .analyze-improve__feature-icon {
                 font-size: 26px;
                 color: var(--color-accent-green);
             }
 
-            .analyze-improve__item-text {
+            .analyze-improve__feature-text {
                 font-family: var(--font-epilogue);
                 font-weight: var(--weight-reguler);
                 font-size: 16px;
