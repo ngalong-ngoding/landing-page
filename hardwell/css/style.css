@@ -253,26 +253,31 @@
         padding-right: 136px;
         margin-bottom: 190px;
 
-        .team-members__card-image {
-            width: 270px;
-            height: 224px;
-            border: 1px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-        }
+        .team-members__card {
+            display: flex;
+            flex-direction: column;
 
-        .team-members__card-name {
-            font-size: 24px;
-            font-weight: var(--weight-bold);
-            margin-bottom: 5px;
-            line-height: 32px;
-        }
+            .team-members__card-image {
+                width: 270px;
+                height: 224px;
+                border: 1px;
+                border-radius: 8px;
+                margin-bottom: 25px;
+            }
 
-        .team-members__card-role {
-            font-size: 16px;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 0.5);
-            line-height: 32px;
+            .team-members__card-name {
+                font-size: 24px;
+                font-weight: var(--weight-bold);
+                margin-bottom: 5px;
+                line-height: 32px;
+            }
+
+            .team-members__card-role {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 0.5);
+                line-height: 32px;
+            }
         }
     }
 }
