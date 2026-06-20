@@ -117,7 +117,7 @@
         .analyze-improve__description {
             font-family: var(--font-epilogue);
             font-size: 16px;
-            font-weight: var(--weight-normal);
+            font-weight: var(--weight-reguler);
             line-height: 32px;
             color: var(--color-neutral-200);
         }
@@ -127,18 +127,18 @@
             flex-direction: column;
             gap: 16px;
 
-            .feature-item {
+            .analyze-improve__feature-item {
                 display: flex;
                 align-items: center;
                 gap: 16px;
             }
 
-            .feature-item__icon {
+            .analyze-improve__item-icon {
                 font-size: 26px;
                 color: var(--color-accent-green);
             }
 
-            .feature-item__text {
+            .analyze-improve__item-text {
                 font-family: var(--font-epilogue);
                 font-weight: var(--weight-reguler);
                 font-size: 16px;
