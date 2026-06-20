@@ -219,33 +219,11 @@
     }
 }
 
-/* Famous clients */
-.famous {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 140px 0px;
-
-    h3 {
-        font-size: 24px;
-        font-weight: var(--weight-bold);
-        color: var(--color-neutral-800);
-        font-family: var(--font-epilogue);
-        margin-bottom: 35px;
-    }
-
-    .famous__clients {
-        display: flex;
-        gap: 54px;
-        align-items: start;
-    }
-}
-
 /* TEAM MEMBERS */
-.team-members {
+.team__members {
     font-family: var(--font-epilogue);
 
-    .title-description {
+    .team-members__header {
         text-align: center;
 
         h1 {
@@ -267,7 +245,7 @@
         }
     }
 
-    .foto-members {
+    .team-members__cards {
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -275,26 +253,48 @@
         padding-right: 136px;
         margin-bottom: 190px;
 
-        img {
+        .team-members__card-image {
             width: 270px;
             height: 224px;
             border: 1px;
             border-radius: 8px;
             margin-bottom: 25px;
         }
-    }
 
-    h2 {
+        .team-members__card-name {
+            font-size: 24px;
+            font-weight: var(--weight-bold);
+            margin-bottom: 5px;
+            line-height: 32px;
+        }
+
+        .team-members__card-role {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 0.5);
+            line-height: 32px;
+        }
+    }
+}
+
+/* Famous clients */
+.famous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0px;
+
+    h3 {
         font-size: 24px;
         font-weight: var(--weight-bold);
-        margin-bottom: 5px;
-        line-height: 32px;
+        color: var(--color-neutral-800);
+        font-family: var(--font-epilogue);
+        margin-bottom: 35px;
     }
 
-    p {
-        font-size: 16px;
-        font-weight: 400;
-        color: rgba(51, 51, 51, 0.5);
-        line-height: 32px;
+    .famous__clients {
+        display: flex;
+        gap: 54px;
+        align-items: start;
     }
 }
