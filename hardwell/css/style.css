@@ -114,7 +114,7 @@
     }
 }
 
-.dashboard {
+.statistic__image {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -128,69 +128,74 @@
     }
 }
 
-.statistik {
+.cards {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 130px;
     margin-bottom: 140px;
     gap: 30px;
 
-    .revenue {
-        border: 1px solid var(--color-neutral-150);
-        border-radius: 8px;
-        width: 370px;
-        height: 224px;
-        /* padding: 59px; */
-        font-family: var(--font-epilogue);
-        text-align: center;
-        color: var(--color-accent-green);
-
-    }
-
-    .projects {
+    .statistic__cards {
         border: 1px solid var(--color-neutral-150);
         border-radius: 8px;
         width: 370px;
         height: 224px;
         font-family: var(--font-epilogue);
-        text-align: center;
-        /* padding: 59px; */
-        color: var(--color-accent-yellow);
-    }
+        font-weight: var(--weight-bold);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 56px;
+        gap: 0;
 
-    .uptime {
-        border: 1px solid var(--color-neutral-150);
-        border-radius: 8px;
-        width: 370px;
-        height: 224px;
-        color: var(--color-accent-orange);
-        font-family: var(--font-epilogue);
-        text-align: center;
-        /* padding: 59px; */
+        .statistic__cards-revenue {
+            color: var(--color-accent-green);
+            display: flex;
+            align-items: center;
+        }
+
+        .statistic__cards-projects {
+            color: var(--color-accent-yellow);
+            display: flex;
+            align-items: center;
+        }
+
+        .statistic__cards-uptime {
+            color: var(--color-accent-orange);
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
-.content-statistik {
-    display: inline-flex;
-    ;
-    align-items: center;
 
-    .num {
-        font-size: 56px;
-        font-weight: var(--weight-bold);
-        margin-top: 59px;
-    }
+.statistic__card-number {
+    font-size: 56px;
+    font-weight: var(--weight-bold);
+}
 
-    .symb {
-        font-size: 40px;
-        font-weight: var(--weight-bold);
-        margin-top: 59px;
-
-    }
-
+.statistic__card-symbol {
+    font-size: 40px;
+    font-weight: var(--weight-bold);
 }
 
 .description-statistik {
     font-size: 20px;
     margin-top: 10px;
+    font-weight: 400;
+}
+
+.color-revenue {
+    color: var(--color-accent-green);
+}
+
+.color-projects {
+    color: var(--color-accent-yellow);
+}
+
+.color-uptime {
+    color: var(--color-accent-orange);
 }
