@@ -114,6 +114,8 @@
     }
 }
 
+
+/* STATISTIC */
 .statistic__image {
     display: flex;
     justify-content: center;
@@ -128,7 +130,7 @@
     }
 }
 
-.cards {
+.statistic__cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +139,7 @@
     margin-bottom: 140px;
     gap: 30px;
 
-    .statistic__cards {
+    .statistic__card {
         border: 1px solid var(--color-neutral-150);
         border-radius: 8px;
         width: 370px;
@@ -148,54 +150,37 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 56px;
         gap: 0;
 
-        .statistic__cards-revenue {
-            color: var(--color-accent-green);
+        .statistic__card-title {
+            font-size: 56px;
+            font-weight: var(--weight-bold);
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
+
+            .statistic__card-symbol {
+                font-size: 40px;
+                font-weight: var(--weight-bold);
+
+            }
         }
 
-        .statistic__cards-projects {
-            color: var(--color-accent-yellow);
-            display: flex;
-            align-items: center;
-        }
-
-        .statistic__cards-uptime {
-            color: var(--color-accent-orange);
-            display: flex;
-            align-items: center;
+        .statistic__card-subtitle {
+            font-size: 20px;
+            font-weight: 400;
         }
     }
 }
 
-
-.statistic__card-number {
-    font-size: 56px;
-    font-weight: var(--weight-bold);
-}
-
-.statistic__card-symbol {
-    font-size: 40px;
-    font-weight: var(--weight-bold);
-}
-
-.description-statistik {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 400;
-}
-
-.color-revenue {
+.statistic__card-revenue {
     color: var(--color-accent-green);
 }
 
-.color-projects {
+.statistic__card-projects {
     color: var(--color-accent-yellow);
 }
 
-.color-uptime {
+.statistic__card-uptime {
     color: var(--color-accent-orange);
 }
