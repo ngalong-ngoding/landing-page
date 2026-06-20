@@ -11,6 +11,7 @@
     /* Neutral (grey scale) */
     --color-neutral-50: #F3F7F5;
     --color-neutral-100: #F2F2F2;
+    --color-neutral-200: rgba(51,51,51,0.5);
     --color-neutral-300: #81838C;
     --color-neutral-400: #7B7D84;
     --color-neutral-500: #69697B;
@@ -25,6 +26,7 @@
     --color-accent-orange: #FB690C;
 
     /* Font Weight */
+    --weight-reguler: 400;
     --weight-medium: 500;
     --weight-semibold: 600;
     --weight-bold: 700;
@@ -138,9 +140,9 @@
 
             .feature-item__text {
                 font-family: var(--font-epilogue);
-                font-weight: var(--weight-normal);
+                font-weight: var(--weight-reguler);
                 font-size: 16px;
-                color: var(--color-neutral-150);
+                color: var(--color-neutral-800);
                 line-height: 32px;
             }
         }
