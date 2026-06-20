@@ -112,3 +112,40 @@
         align-items: start;
     }
 }
+/* footer */
+.header-footer{
+    padding-top:66px;
+    padding-left:133px;
+    padding-right:137px;
+    background-color: var(--color-neutral-950);
+    color:var(--color-white);
+    font-family: var(--font-epilogue);
+
+    .title-footer{
+        display:flex;
+        justify-content: space-between;
+
+        h1{
+            font-family: var(--font-epilogue);
+            font-weight:700;
+            font-size:40px;
+            line-height:48px;
+        }
+
+        p{
+            margin-top:15px;
+        }
+    }
+}
+.text-footer{
+    display:flex;
+    justify-content: space-between;
+    margin-top:114px;
+    margin-bottom:65px;
+
+
+    .text-body-footer{
+       display:flex;
+       justify-content: space-between; 
+    }
+}
