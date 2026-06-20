@@ -91,6 +91,73 @@
 }
 
 
+
+/* how we work */
+.we-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-neutral-50);
+    padding-bottom: 96px;
+    position: relative;
+
+    .we-work__item {
+        width: 100%;
+        max-width: 848px;
+        height: 245px;
+        position: relative;
+
+        .item__wrapper {
+            position: absolute;
+            width: 100%;
+            max-width: 848px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            display: grid;
+            place-items: center;
+        }
+
+        .item__img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            grid-area: 1 / 1;
+        }
+
+        .item__icon {
+            grid-area: 1/1;
+
+            width: 100px;
+            height: 80px;
+            background-color: var(--color-accent-Fiery-Orange);
+            border-radius: 12px;
+
+
+            font-size: 40px;
+            color: var(--color-white);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px 29px;
+            cursor: pointer;
+            z-index: 20;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+
+            &:hover {
+                background-color: var(--color-accent-Rust-orange);
+            }
+        }
+    }
+
+}
+
+
+
 /* Famous clients */
 .famous {
     display: flex;
