@@ -116,71 +116,71 @@
 
 
 /* STATISTIC */
-.statistic__image {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-
-
-    img {
-        display: block;
-        width: 575px;
-        height: 472px;
-        gap: 0;
-    }
-}
-
-.statistic__cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 130px;
-    margin-bottom: 140px;
-    gap: 30px;
-
-    .statistic__card {
-        border: 1px solid var(--color-neutral-150);
-        border-radius: 8px;
-        width: 370px;
-        height: 224px;
-        font-family: var(--font-epilogue);
-        font-weight: var(--weight-bold);
+.statistic {
+    .statistic__image {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+        img {
+            display: block;
+            width: 575px;
+            height: 472px;
+            gap: 0;
+        }
+    }
+
+    .statistic__cards {
+        display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0;
+        text-align: center;
+        margin-top: 130px;
+        margin-bottom: 140px;
+        gap: 30px;
 
-        .statistic__card-title {
-            font-size: 56px;
+        .statistic__card {
+            border: 1px solid var(--color-neutral-150);
+            border-radius: 8px;
+            width: 370px;
+            height: 224px;
+            font-family: var(--font-epilogue);
             font-weight: var(--weight-bold);
-            margin-bottom: 10px;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            gap: 0;
 
-            .statistic__card-symbol {
-                font-size: 40px;
+            .statistic__card-title {
+                font-size: 56px;
                 font-weight: var(--weight-bold);
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
 
+                .statistic__card-symbol {
+                    font-size: 40px;
+                    font-weight: var(--weight-bold);
+                }
+            }
+
+            .statistic__card-subtitle {
+                font-size: 20px;
+                font-weight: 400;
             }
         }
 
-        .statistic__card-subtitle {
-            font-size: 20px;
-            font-weight: 400;
+        .statistic__card-revenue {
+            color: var(--color-accent-green);
+        }
+
+        .statistic__card-projects {
+            color: var(--color-accent-yellow);
+        }
+
+        .statistic__card-uptime {
+            color: var(--color-accent-orange);
         }
     }
-}
-
-.statistic__card-revenue {
-    color: var(--color-accent-green);
-}
-
-.statistic__card-projects {
-    color: var(--color-accent-yellow);
-}
-
-.statistic__card-uptime {
-    color: var(--color-accent-orange);
 }
