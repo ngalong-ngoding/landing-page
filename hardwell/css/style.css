@@ -22,8 +22,9 @@
   
   /* neutral (white scale) */
   --color-white: #ffffff;
-  --color-white-50: #ffffff14;
-  --color-white-100: #ffffff80;
+  --color-white-50:rgba(255, 255, 255, 0.5);
+  --color-white-100: #FFFFFF80;
+  --color-white-7:rgba(255, 255, 255, 0.08);
 
 
   /* Accent */
@@ -280,8 +281,8 @@
       gap: 8px;
       font-size: 15px;
 
-      .footer__content-icon {
-        background-color: var(--color-white-50);
+      .footer__icon-content {
+        background-color:var(--color-white-7) ;
         border-radius: 100%;
         width: 48px;
         height: 48px;
@@ -297,12 +298,13 @@
     justify-content: space-between;
     margin-top: 114px;
 
-    .footer__title-copyright {
+    .footer__copyright-title {
       font-weight: var(--weight-regular);
       font-size: 16px;
-      line-heigt: 32px;
+      line-height: 32px;
       letter-spacing: 0px;
       color: var(--color-white-50);
+
     }
 
     .footer__copyright-body {
@@ -316,6 +318,7 @@
 
       h5 {
         font-size: 16px;
+        font-weight: var(--weight-regular);
       }
     }
   }
