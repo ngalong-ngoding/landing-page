@@ -12,6 +12,18 @@
 
     /* color text */
     --color-black-100: #000000;
+
+    /* font-weight */
+    --weight-reguler: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
