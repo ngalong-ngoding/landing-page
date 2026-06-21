@@ -1,0 +1,31 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #000000;
+
+  /* Secondary Colors */
+  --color-secondary: #F50103;
+  --color-secondary-light: #F55529;
+
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-100: #181818;
+  --color-gray-150: #1D2027;
+
+  /* Font Weight */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* Font Family */
+  --font-work-sans: 'Work Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-league-spartan: 'League Spartan', sans-serif;
+  --font-epilogue: 'Epilogue', sans-serif;
+  --font-cormorant: 'Cormorant', serif;
+  --font-gelasio: 'Gelasio', serif;
+}
