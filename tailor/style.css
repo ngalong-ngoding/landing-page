@@ -249,125 +249,130 @@
     }
 
     .stats-bar {
-    width: 100%;
-    margin-top: 40px;
-
-    .stats-bar__shadow-layer {
         width: 100%;
-        background-color: var(--color-black-400);
-        
-    }
+        margin-top: 40px;
 
-    .stats-bar__main-card {
-        background-color: var(--color-accent-fiery-orange);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 55px 70px;
-        transform: translate(16px, -16px);
-        transition: transform 0.3s ease;
-    }
+        .stats-bar__shadow-layer {
+            width: 100%;
+            background-color: var(--color-black-400);
 
-    .stats-bar__left-group {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-        align-items: flex-start;
-        font-family: var(--font-montserrat);
-        color: var(--color-white-100);
-
-        .stats-bar__sub-item {
-            display: flex;
-            flex-direction: column;
-
-            .stats-bar__row-1 {
-                font-size: 24px;
-                font-weight: var(--weight-semibold);
-                line-height: 110%;
-                margin-bottom: 6px;
-                white-space: nowrap;
-                color: var(--color-white-100);
-
-                .stats-bar__number {
-                    font-size: 42px;
-                    font-weight: var(--weight-bold);
-                    letter-spacing: -1px;
-                }
-            }
-
-            .stats-bar__row-2 {
-                font-size: 24px;
-                font-weight: var(--weight-semibold);
-                line-height: 110%;
-                white-space: nowrap;
-            }
-        }
-    }
-
-    .stats-bar__right-group {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: right;
-        font-family: var(--font-montserrat);
-        color: var(--color-white-100);
-
-        .stats-bar__contact-label {
-            font-size: 24px;
-            font-weight: var(--weight-semibold);
-            line-height: 110%;
-            margin-bottom: 8px;
-            white-space: nowrap;
-            color: var(--color-white-100);
         }
 
-        .stats-bar__phone-number {
-            font-size: 44px;
-            font-weight: var(--weight-bold);
-            color: var(--color-white-100);
-            text-decoration: none;
-            line-height: 110%;
-            letter-spacing: -1px;
-            white-space: nowrap;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-@media (max-width: 1440px) {
-    .stats-bar {
         .stats-bar__main-card {
-            padding: 40px 45px;
-            transform: translate(12px, -12px);
+            background-color: var(--color-accent-fiery-orange);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 55px 70px;
+            transform: translate(16px, -16px);
+            transition: transform 0.3s ease;
         }
 
         .stats-bar__left-group {
-            gap: 40px;
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            align-items: flex-start;
+            font-family: var(--font-montserrat);
+            color: var(--color-white-100);
 
             .stats-bar__sub-item {
+                display: flex;
+                flex-direction: column;
+
                 .stats-bar__row-1 {
-                    font-size: 18px;
-                    .stats-bar__number { font-size: 32px; }
+                    font-size: 24px;
+                    font-weight: var(--weight-semibold);
+                    line-height: 110%;
+                    margin-bottom: 6px;
+                    white-space: nowrap;
+                    color: var(--color-white-100);
+
+                    .stats-bar__number {
+                        font-size: 42px;
+                        font-weight: var(--weight-bold);
+                        letter-spacing: -1px;
+                    }
                 }
+
                 .stats-bar__row-2 {
-                    font-size: 18px;
+                    font-size: 24px;
+                    font-weight: var(--weight-semibold);
+                    line-height: 110%;
+                    white-space: nowrap;
                 }
             }
         }
 
         .stats-bar__right-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+            font-family: var(--font-montserrat);
+            color: var(--color-white-100);
+
             .stats-bar__contact-label {
-                font-size: 18px;
+                font-size: 24px;
+                font-weight: var(--weight-semibold);
+                line-height: 110%;
+                margin-bottom: 8px;
+                white-space: nowrap;
+                color: var(--color-white-100);
             }
+
             .stats-bar__phone-number {
-                font-size: 34px;
+                font-size: 44px;
+                font-weight: var(--weight-bold);
+                color: var(--color-white-100);
+                text-decoration: none;
+                line-height: 110%;
+                letter-spacing: -1px;
+                white-space: nowrap;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
-}
+
+    @media (max-width: 1440px) {
+        .stats-bar {
+            .stats-bar__main-card {
+                padding: 40px 45px;
+                transform: translate(12px, -12px);
+            }
+
+            .stats-bar__left-group {
+                gap: 40px;
+
+                .stats-bar__sub-item {
+                    .stats-bar__row-1 {
+                        font-size: 18px;
+
+                        .stats-bar__number {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .stats-bar__row-2 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .stats-bar__right-group {
+                .stats-bar__contact-label {
+                    font-size: 18px;
+                }
+
+                .stats-bar__phone-number {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
 
 }
