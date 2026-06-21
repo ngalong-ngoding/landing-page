@@ -1,0 +1,17 @@
+:root {
+
+    /* color background */
+    --color-white-200: #F9F6F4 ;
+    --color-white-100: #ffffff;
+
+    /* accent */
+    --color-accent-orange: #F55529;
+    --color-accent-rust-orange: #F95E3D;
+    --color-accent-fiery-orange: #F54C1E;
+    --color-accent-light-orange: #FF5324;
+
+    /* color text */
+    --color-black-100: #000000;
+}
+
+
