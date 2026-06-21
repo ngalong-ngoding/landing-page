@@ -224,7 +224,7 @@
 }
 
 /* TEAM MEMBERS */
-.team__members {
+.team-members {
   font-family: var(--font-epilogue);
 
   .team-members__header {
@@ -391,7 +391,7 @@
 
 /* Tablet responsive */
 @media (max-width: 769px) {
-  .team__members {
+  .team-members {
     .team-members__cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
