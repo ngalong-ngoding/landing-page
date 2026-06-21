@@ -1,7 +1,7 @@
 :root {
 
     /* color background */
-    --color-white-200: #F9F6F4 ;
+    --color-white-200: #F9F6F4;
     --color-white-100: #ffffff;
 
     /* accent */
@@ -21,7 +21,7 @@
     --weight-extrabold: 800;
 
     /* Font family */
-    --font-montserrat:"Montserrat", sans-serif; 
+    --font-montserrat: "Montserrat", sans-serif;
 }
 
 * {
@@ -30,3 +30,101 @@
     box-sizing: border-box;
 }
 
+.bigger-better {
+    background-color: var(--color-white-200);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+
+    .bigger-better__media-content {
+        display: flex;
+        padding-right: 40px;
+
+        .bigger-better__media-image {
+            display: flex;
+            gap: 20px;
+
+
+            .media-content__image-1 {
+                width: 360px;
+                height: 498px;
+            }
+
+            .media-content__image-2 {
+                width: 275px;
+                height: 372px;
+            }
+        }
+
+        .bigger-better__media-image-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .media-content__text {
+                font-weight: var(--weight-semibold);
+                font-size: 10px;
+                font-family: var(--font-montserrat);
+                line-height: 160%;
+                text-align: justify;
+                padding-left: 12px;
+            }
+        }
+    }
+
+    .bigger-better__content {
+        display: flex;
+        gap: 11px;
+        align-items: flex-end;
+        padding-left: 80px;
+
+
+        .line-vertikal {
+            border-left: 3px solid black;
+            height: 120px;
+        }
+
+        .bigger-better__content-feature {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+
+            .bigger-better__content-title {
+                font-weight: var(--weight-bold);
+                font-family: var(--font-montserrat);
+                font-size: 48px;
+                color: var(--color-black-100);
+                line-height: 130%;
+
+                span {
+                    color: var(--color-accent-fiery-orange);
+                }
+            }
+
+            .bigger-better__content-description {
+                font-family: var(--font-montserrat);
+                font-weight: var(--weight-semibold);
+                color: var(--color-black-100);
+                font-size: 18px;
+                line-height: 160%;
+            }
+        }
+    }
+
+    .bigger-better__bg-content {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        left: -150px;
+        bottom: 0;
+    }
+
+}
