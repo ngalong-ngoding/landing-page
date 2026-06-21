@@ -19,6 +19,9 @@
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+
+    /* Font family */
+    --font-montserrat:"Montserrat", sans-serif; 
 }
 
 * {
