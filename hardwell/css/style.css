@@ -223,6 +223,69 @@
     }
 }
 
+/* TEAM MEMBERS */
+.team__members {
+    font-family: var(--font-epilogue);
+
+    .team-members__header {
+        text-align: center;
+
+        h1 {
+            font-size: 56px;
+            font-weight: var(--weight-bold);
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--color-neutral-800);
+            line-height: 32px;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 70px;
+        }
+    }
+
+    .team-members__cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 134px;
+        padding-right: 136px;
+        margin-bottom: 190px;
+
+        .team-members__card {
+            display: flex;
+            flex-direction: column;
+
+            .team-members__card-image {
+                width: 270px;
+                height: 224px;
+                border: 1px;
+                border-radius: 8px;
+                margin-bottom: 25px;
+            }
+
+            .team-members__card-name {
+                font-size: 24px;
+                font-weight: var(--weight-bold);
+                margin-bottom: 5px;
+                line-height: 32px;
+            }
+
+            .team-members__card-role {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 0.5);
+                line-height: 32px;
+            }
+        }
+    }
+}
+
 /* Famous clients */
 .famous {
   display: flex;
