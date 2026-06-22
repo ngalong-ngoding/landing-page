@@ -1,7 +1,7 @@
 :root {
 
     /* color background */
-    --color-white-200: #F9F6F4 ;
+    --color-white-200: #F9F6F4;
     --color-white-100: #ffffff;
 
     /* accent */
@@ -21,7 +21,7 @@
     --weight-extrabold: 800;
 
     /* Font family */
-    --font-montserrat:"Montserrat", sans-serif; 
+    --font-montserrat: "Montserrat", sans-serif;
 }
 
 * {
@@ -30,3 +30,37 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    display: flex;
+    background-color:var(--color-white-100);
+    padding: 39px 200px;
+    justify-content: space-between;
+
+    .navbar__menu-container {
+        display: flex;
+        gap: 57px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: var(--weight-semibold);
+            font-family: var(--font-montserrat);
+        }
+    }
+
+    .navbar__icon-container {
+        display: flex;
+        gap: 20px;
+        
+        ion-icon {
+            font-size: 34px;
+            font-width: 34px;
+        }
+    }
+    .navbar img{
+        width: 98px;
+        height: 22px;
+        margin-top: 17px;
+    }
+}
