@@ -381,12 +381,12 @@
         flex-direction: column;
         justify-content: center;
         gap: 86px;
+        padding: 55px 350px;
 
         .latest-works__feature-content {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 226px;
+            justify-content: space-between;
             position: relative;
             
 
@@ -397,6 +397,7 @@
                 line-height: 150%;
                 font-size: 64px;
                 text-decoration: underline;
+                
 
                 span{
                     text-decoration: underline;
@@ -417,16 +418,30 @@
 
             .latest-works__feature-icon {
                position: absolute;
-               right: 250px;
+               right: -50px;
                bottom: -50px;
                 
             }
         }
 
         .latest-works__feature-media {
+           display: flex;
+           gap: 39px;
+
+           .latest-works__media-content {
             display: flex;
-            margin: 0 auto;
-            justify-self: center;
+            flex-direction: column;
+            gap: 33px;
+           }
+
+           .latest-works__media-text {
+            font-family: var(--font-montserrat);
+            font-weight: var(--weight-semibold);
+            color: var(--color-black-100);
+            line-height: 180%;
+            font-size: 22px;
+            text-align: center;
+           }
             
         }
     }
