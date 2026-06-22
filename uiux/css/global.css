@@ -28,3 +28,7 @@
     box-sizing: border-box;
     border: none;
 }
+
+img {
+    max-width: 100%;
+}
