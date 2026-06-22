@@ -1,7 +1,29 @@
+/* SPACE GROTESK FONT */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* CAVEAT */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/* DM SANS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* INTER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
+    /* FONT WEIGHT */
     --weight-regular: 400;
     --weight-medium: 500;
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+
+    /* FONT FAMILY */
+    --font-space-grotesk: "Space Grotesk", sans-serif;
+    --font-caveat: "Caveat", cursive;
+    --font-dm-sans: "DM Sans", sans-serif;;
+    --font-inter: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
