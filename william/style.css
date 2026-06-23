@@ -233,3 +233,125 @@
     }
   }
 }
+
+/* CLASS SOLVING PROBLEMS */
+.solving {
+  background-color: var(--color-gray-100);
+  color: var(--color-white);
+  /* border: solid white; */
+  padding: 100px;
+
+  .solving__container {
+    /* border: solid white; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 80px;
+
+    .solving__role-container {
+      /* border: solid red; */
+      width: 520px;
+      font-family: var(--font-work-sans);
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+
+      .role__item {
+        /* border: solid yellow; */
+
+        .role__item-header {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .header-number {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: var(--weight-bold);
+          }
+
+          .header-line {
+            flex: 1;
+            height: 1px;
+            background-color: var(--color-white);
+          }
+
+          .header-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--color-secondary-light);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            rotate: -45deg;
+          }
+        }
+
+        h3 {
+          font-size: 22px;
+          margin: 16px 0 12px;
+          padding-left: 30px;
+        }
+
+        .role-list {
+          display: flex;
+          gap: 20px;
+          list-style: none;
+
+          p {
+            font-size: 14px;
+            color: #cccccc;
+            position: relative;
+            padding-left: 30px;
+            display: flex;
+            gap: 8px;
+            
+
+            .li-icon {
+              width: 15px;
+              height: 15px;
+              background-color: var(--color-secondary-light);
+              border-radius: 50%;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .solving__problems-description-container {
+      /* border: solid red; */
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 29px;
+
+      .title__description {
+        font-family: var(--font-lato);
+        font-size: 42px;
+        font-weight: var(--weight-bold);
+      }
+
+      .content__description {
+        font-family: var(--font-work-sans);
+        font-size: 12px;
+      }
+
+      .btn-solving {
+        width: 150px;
+        font-size: 10px;
+        font-weight: var(--weight-medium);
+        display: flex;
+        gap: 10px;
+        background-color: var(--color-secondary-light);
+
+
+      }
+    }
+  }
+}
+
