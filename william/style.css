@@ -89,3 +89,26 @@
     }
   }
 }
+
+/* NAVIGASI SOSIAL MEDIA */
+.nav__sosmed{
+  background-color: var(--color-secondary);
+  padding:66px 432px;
+  
+
+  .nav__sosmed-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:126px;
+  
+    a{
+      font-family: var(--font-lato);
+      font-weight: var(--weight-extrabold);
+      font-size: 20px;
+      line-height: 140%;
+      color:var(--color-white);
+      text-decoration: none;
+    }
+  }
+}
