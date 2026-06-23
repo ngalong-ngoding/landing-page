@@ -3,11 +3,11 @@
   --color-primary: #000000;
 
   /* Secondary Colors */
-  --color-secondary: #F50103;
-  --color-secondary-light: #F55529;
+  --color-secondary: #f50103;
+  --color-secondary-light: #f55529;
 
   /* Neutral Colors */
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000000;
   --color-gray-100: #181818;
   --color-gray-150: #1D2027;
@@ -21,16 +21,15 @@
   --weight-extrabold: 800;
 
   /* Font Family */
-  --font-work-sans: 'Work Sans', sans-serif;
-  --font-inter: 'Inter', sans-serif;
-  --font-lato: 'Lato', sans-serif;
-  --font-open-sans: 'Open Sans', sans-serif;
-  --font-league-spartan: 'League Spartan', sans-serif;
-  --font-epilogue: 'Epilogue', sans-serif;
-  --font-cormorant: 'Cormorant', serif;
-  --font-gelasio: 'Gelasio', serif;
+  --font-work-sans: "Work Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-league-spartan: "League Spartan", sans-serif;
+  --font-epilogue: "Epilogue", sans-serif;
+  --font-cormorant: "Cormorant", serif;
+  --font-gelasio: "Gelasio", serif;
 }
-
 
 * {
   margin: 0;
@@ -40,19 +39,17 @@
 
 .btn {
   background-color: var(--color-secondary);
-  padding: 12px 12px;
+  padding: 8px 20px;
   color: var(--color-white);
   border-radius: 3px;
   cursor: pointer;
   transition-duration: 200ms;
-  font-size: 20px;
   font-weight: var(--weight-extrabold);
   font-family: var(--font-lato);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 148px;
   border: none;
 
   &:hover {
@@ -65,36 +62,83 @@
 }
 
 
-/* Section Hero */
+/* ClASS NAVBAR */
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+
+  .navbar__content {
+    /* border: solid white; */
+    margin: 40 auto;
+    display: flex;
+    align-items: center;
+    width: 895px;
+    justify-content: space-between;
+    gap: 30px;
+
+    .navbar__title {
+      margin-right: 50px;
+      font-weight: var(--weight-bold);
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+
+    .navbar__menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 12px;
+
+      a {
+        text-decoration: none;
+        color: var(--color-white);
+        font-weight: var(--weight-medium);
+        line-height: 28px;
+
+        &:hover {
+          color: var(--color-secondary);
+          text-decoration: underline;
+        }
+
+        &:active {
+          background-color: var(--color-secondary);
+        }
+      }
+    }
+  }
+}
+
+/* CLASS HERO */
 .hero__container {
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: var(--font-lato);
-  min-height: 100vh;
   min-width: 100vh;
+  max-height: fit-content;
   display: flex;
+  justify-content: center;
   align-items: center;
-
-  .container {
-    max-width: 400px;
-  }
 
   .hero__content {
     margin: 0 auto;
-    padding: 0 95px;
     display: flex;
     align-items: center;
-    justify-content: center;
 
     .hero__content-title {
       display: flex;
       flex-direction: column;
-      width: 400px;
+      width: 450px;
       gap: 31px;
 
       .hero__title {
-        font-size: 40px;
+        font-size: 44px;
         font-weight: var(--weight-extrabold);
+        width: 400px;
 
         .william-color {
           color: var(--color-secondary);
@@ -102,12 +146,36 @@
       }
 
       .hero__subtitle {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: var(--weight-regular);
-        width: 380px;
+        width: 430px;
       }
 
+      .btn-hero {
+        background-color: var(--color-secondary);
+        padding: 12px 12px;
+        color: var(--color-white);
+        border-radius: 3px;
+        cursor: pointer;
+        transition-duration: 200ms;
+        font-size: 20px;
+        font-weight: var(--weight-extrabold);
+        font-family: var(--font-lato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 148px;
+        border: none;
 
+        &:hover {
+          background-color: var(--color-secondary-light);
+        }
+
+        &:active {
+          background-color: var(--color-primary-active);
+        }
+      }
     }
 
     .hero__content-image {
@@ -118,11 +186,10 @@
       justify-content: center;
       position: relative;
 
-
       .circle {
         position: absolute;
-        width: 340px;
-        height: 340px;
+        width: 440px;
+        height: 440px;
         background-color: var(--color-gray-200);
         border-radius: 50%;
         inset: 0;
@@ -132,12 +199,37 @@
       }
 
       img {
-        width: 330px;
-        height: 430px;
+        width: 440px;
+        height: 580px;
         position: relative;
         z-index: 2;
       }
     }
   }
 
+}
+
+/* CLASS NAVIGASI SOSIAL MEDIA */
+.nav__sosmed {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+
+  .nav__sosmed-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 126px;
+    width: 800px;
+    height: 148px;
+    font-family: var(--font-lato);
+    font-weight: var(--weight-extrabold);
+    font-size: 20px;
+    text-decoration: none;
+
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+    }
+  }
 }
