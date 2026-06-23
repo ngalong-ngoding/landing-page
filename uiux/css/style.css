@@ -16,3 +16,58 @@
     --color-white: #FFFFFF;
     --color-white-50: #FFFFFF80;
 }
+
+.create{
+
+    .container__create{
+
+        font-family: var(--font-space-grotesk);
+        color: var(--color-black);
+
+        .contain1__create{
+        
+            display: flex;
+
+            h2{
+
+                font-size: 48px;
+                line-height: 120%;
+                text-decoration: underline solid;
+                font-weight: var(--weight-bold);
+
+            }
+
+        }
+
+        .contain2__create{
+
+            display: grid;
+
+            .imgcontent{
+
+                width: 104px;
+                height: 104px;
+
+            }
+
+            .title{
+
+                font-size: 48px;
+                line-height: 120%;
+                color: var(--color-black);
+
+            }
+
+            .isicontent{
+
+                font-size: 24px;
+                font-weight: var(--weight-medium);
+                line-height: 160%;
+                color: var(--color-neutral-700);
+                
+            }
+
+        }
+    }
+
+}
