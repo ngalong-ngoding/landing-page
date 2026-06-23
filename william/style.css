@@ -10,8 +10,8 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-gray-100: #181818;
-  --color-gray-150: #1D2027;
-  --color-gray-200: #1C1C1C;
+  --color-gray-150: #1d2027;
+  --color-gray-200: #1c1c1c;
 
   /* Font Weight */
   --weight-regular: 400;
@@ -61,7 +61,6 @@
   }
 }
 
-
 /* ClASS NAVBAR */
 .navbar__container {
   display: flex;
@@ -85,7 +84,6 @@
       font-weight: var(--weight-bold);
       font-size: 18px;
       line-height: 24px;
-
     }
 
     .navbar__menu {
@@ -206,7 +204,6 @@
       }
     }
   }
-
 }
 
 /* CLASS NAVIGASI SOSIAL MEDIA */
@@ -232,4 +229,36 @@
       text-decoration: none;
     }
   }
+}
+
+.services__container {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+
+  .services__title {
+    width: 895px;
+    padding: 144px 0;
+
+    h2 {
+      font-family: var(--font-work-sans);
+      font-weight: var(--weight-semibold);
+      font-size: 15px;
+      line-height: 28px;
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: var(--font-lato);
+      font-weight: var(--weight-bold);
+      font-size: 28px;
+      line-height:28px;
+      color:var(--color-white);
+      text-align: center;
+    }
+  }
+  
 }
