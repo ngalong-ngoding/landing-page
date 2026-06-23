@@ -13,6 +13,65 @@
     --color-lime-300: #CAEF46;
     --color-amber-500: #EE9E00;
     --color-orange-50: #FEF1E7;
+    --color-orange-55: #FFF1E8;
     --color-white: #FFFFFF;
     --color-white-50: #FFFFFF80;
+}
+
+/* Class component */
+body {
+    font-family: var(--font-space-grotesk);
+}
+
+.btn {
+    padding: 16px 32px;
+    border: 2px solid var(--color-neutral-900);
+    background-color: var(--color-lime-400);
+    font-size: 16px;
+    font-weight: var(--weight-bold);
+}
+
+/* Hero section */
+.hero {
+    background-color: var(--color-orange-55);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    border: 1px solid blue;
+
+    .hero__content {
+        position: relative;
+        border: 1px solid red;
+
+        .hero__content-title {
+            font-size: 88px;
+            font-weight: var(--weight-bold);
+            color: var(--color-neutral-900);
+            line-height: 120%;
+            max-width: 10ch;
+        }
+
+        .hero__content-description {
+            font-size: 16px;
+            color: var(--color-neutral-900);
+            font-weight: var(--weight-medium);
+            line-height: 26px;
+            font-family: var(--font-dm-sans);
+            max-width: 40ch;
+        }
+
+        .hero__content-hole {
+            position: absolute;
+            right: -40px;
+            top: 0;
+        }
+    }
+
+    .hero__image {
+        height: 100%;
+        /* margin-bottom: -300px;
+        max-width: 622px;
+        height: auto;
+        object-fit: contain; */
+    }
 }
