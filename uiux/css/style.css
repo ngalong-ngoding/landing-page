@@ -141,7 +141,7 @@ body {
     }
 }
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE - TABLET*/
 @media (max-width: 768px) {
     .portofolio {
         padding: 50px 16px;
