@@ -96,3 +96,32 @@ body {
         bottom: 10%
     }
 }
+
+/* Responsive mobile - tablet */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+
+        .hero__content {
+            margin-left: 0px;
+
+            .hero__content-hole {
+                right: 20px;
+            }
+        }
+
+        .hero__image {
+            display: none;
+        }
+
+        .hero__ellipse {
+            top: -30%;
+        }
+
+        .hero__spring {
+            left: auto;
+            right: 40px;
+        }
+    }
+}
