@@ -61,9 +61,10 @@
   }
 }
 
-
 /* ClASS NAVBAR */
 .navbar__container {
+  /* border: solid yellow; */
+  min-width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +77,9 @@
     margin: 40 auto;
     display: flex;
     align-items: center;
-    width: 895px;
+    width: 100%;
+    max-width: 895px;
+    /* padding: 0 20px; */
     justify-content: space-between;
     gap: 30px;
 
@@ -114,6 +117,7 @@
 
 /* CLASS HERO */
 .hero__container {
+  /* border: solid yellow; */
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: var(--font-lato);
@@ -124,6 +128,7 @@
   align-items: center;
 
   .hero__content {
+    /* border: solid yellow; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -237,11 +242,9 @@
 .solving {
   background-color: var(--color-gray-100);
   color: var(--color-white);
-  /* border: solid white; */
   padding: 100px;
 
   .solving__container {
-    /* border: solid white; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -249,7 +252,6 @@
     gap: 80px;
 
     .solving__role-container {
-      /* border: solid red; */
       width: 520px;
       font-family: var(--font-work-sans);
       display: flex;
@@ -257,8 +259,6 @@
       gap: 38px;
 
       .role__item {
-
-        /* border: solid yellow; */
         .role__item-header {
           display: flex;
           align-items: center;
@@ -303,19 +303,18 @@
 
           p {
             font-size: 16px;
-            color: #cccccc;
+            font-weight: var(--weight-regular);
+            color: var(--color-white);
             position: relative;
             padding-left: 30px;
             display: flex;
             gap: 8px;
-
 
             .li-icon {
               width: 15px;
               height: 15px;
               background-color: var(--color-secondary-light);
               border-radius: 50%;
-              padding: 0;
             }
           }
         }
@@ -338,6 +337,8 @@
       .content__description {
         font-family: var(--font-work-sans);
         font-size: 12px;
+        width: 300px;
+        line-height: 180%;
       }
 
       .btn-solving {
@@ -355,8 +356,57 @@
         &:active {
           background-color: var(--color-secondary-light);
         }
+      }
+    }
+  }
+}
 
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    width: 910px;
+  }
 
+  .hero__container {
+    width: 910px;
+    padding-left: 20;
+
+  .hero__content-title {
+    padding: 30px;
+  }
+
+    .hero__title {
+      width: 200px;
+      height: 200px;
+    }  
+  }
+
+  .nav__sosmed {
+    width: 910px;
+  }
+
+  .solving {
+    width: 910px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .solving__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      .solving__role-container {
+        width: 700px;
+      }
+
+      .solving__problems-description-container {
+        width: 700px;
+        
       }
     }
   }
