@@ -9,6 +9,7 @@
     --color-neutral-900-90: #111111e6;
     --color-neutral-700: #3A3A3A;
     --color-neutral-500: #7C7C7C;
+    --color-lime-500: #9ed40e;
     --color-lime-400: #C0EF37;
     --color-lime-300: #CAEF46;
     --color-amber-500: #EE9E00;
@@ -29,6 +30,12 @@ body {
     background-color: var(--color-lime-400);
     font-size: 16px;
     font-weight: var(--weight-bold);
+    cursor: pointer;
+    transition-duration: 200ms;
+
+    &:hover {
+        background-color: var(--color-lime-500);
+    }
 }
 
 /* Hero section */
@@ -36,42 +43,56 @@ body {
     background-color: var(--color-orange-55);
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    border: 1px solid blue;
+    height: 100svh;
+    max-height: 800px;
+    position: relative;
 
     .hero__content {
         position: relative;
-        border: 1px solid red;
+        margin-left: 20%;
+        /* padding-inline: clamp(16px, 8vw, 160px); */
 
         .hero__content-title {
-            font-size: 88px;
+            /* clamp(min, preferred ((max/targetScreen) * 100), max) */
+            font-size: clamp(36px, 6vw, 88px);
             font-weight: var(--weight-bold);
             color: var(--color-neutral-900);
             line-height: 120%;
             max-width: 10ch;
+            margin-bottom: 16px;
         }
 
         .hero__content-description {
-            font-size: 16px;
+            font-size: clamp(14px, 1.5vw, 16px);
             color: var(--color-neutral-900);
             font-weight: var(--weight-medium);
             line-height: 26px;
             font-family: var(--font-dm-sans);
             max-width: 40ch;
+            margin-bottom: 44px;
         }
 
         .hero__content-hole {
             position: absolute;
             right: -40px;
-            top: 0;
+            top: -40px;
         }
     }
 
     .hero__image {
-        height: 100%;
-        /* margin-bottom: -300px;
-        max-width: 622px;
-        height: auto;
-        object-fit: contain; */
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+    }
+
+    .hero__ellipse {
+        position: absolute;
+        left: 0;
+    }
+
+    .hero__spring {
+        position: absolute;
+        left: 10%;
+        bottom: 10%
     }
 }
