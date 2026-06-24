@@ -380,7 +380,7 @@
 /* latest works */
 
 .latest-works {
-    
+
     .latest-works__feature {
         display: flex;
         flex-direction: column;
@@ -393,7 +393,7 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
-            
+
 
             .latest-works__feature-title {
                 font-family: var(--font-montserrat);
@@ -402,9 +402,9 @@
                 line-height: 150%;
                 font-size: 64px;
                 text-decoration: underline;
-                
 
-                span{
+
+                span {
                     text-decoration: underline;
                     color: var(--color-accent-orange);
                 }
@@ -417,38 +417,95 @@
                 line-height: 180%;
                 font-family: var(--font-montserrat);
                 max-width: 35ch;
-                
-                
+
+
             }
 
             .latest-works__feature-icon {
-               position: absolute;
-               right: -50px;
-               bottom: -50px;
-                
+                position: absolute;
+                right: -50px;
+                bottom: -50px;
+
             }
         }
 
         .latest-works__feature-media {
-           display: flex;
-           gap: 39px;
+            display: flex;
+            gap: 39px;
 
-           .latest-works__media-content {
+            .latest-works__media-content {
+                display: flex;
+                flex-direction: column;
+                gap: 33px;
+            }
+
+            .latest-works__media-text {
+                font-family: var(--font-montserrat);
+                font-weight: var(--weight-semibold);
+                color: var(--color-black-100);
+                line-height: 180%;
+                font-size: 22px;
+                text-align: center;
+            }
+
+        }
+    }
+
+}
+
+
+/* create amazing */
+.create-amazing {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0;
+    margin-top: 57px;
+    position: relative;
+
+    .create-amazing__feature-icon {
+        position: absolute;
+        left: 220px;
+        top: -30px;
+    }
+
+    .create-amazing__feature {
+        display: flex;
+        gap: 86px;
+        padding: 0 350px;
+        position: relative;
+
+        .create-amazing__feature-content {
             display: flex;
             flex-direction: column;
-            gap: 33px;
-           }
+            gap: 21px;
 
-           .latest-works__media-text {
-            font-family: var(--font-montserrat);
-            font-weight: var(--weight-semibold);
-            color: var(--color-black-100);
-            line-height: 180%;
-            font-size: 22px;
-            text-align: center;
-           }
-            
+
+            .create-amazing__feature-title {
+                font-weight: var(--weight-bold);
+                font-family: var(--font-montserrat);
+                font-size: 50px;
+                text-decoration: underline;
+                color: var(--color-accent-orange);
+                max-width: 15ch;
+                line-height: 150%;
+
+
+                span {
+                    color: var(--color-black-100);
+                    text-decoration: underline;
+                }
+
+            }
+
+            .create-amazing__feature-description {
+                font-weight: var(--weight-medium);
+                font-family: var(--font-montserrat);
+                font-size: 22px;
+                line-height: 180%;
+                color: var(--color-black-100);
+            }
         }
+
     }
 
 }
