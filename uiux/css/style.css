@@ -23,13 +23,24 @@
 
         font-family: var(--font-space-grotesk);
         color: var(--color-black);
+        /* max-width: 1420px; */
+        /* border: black solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 315px;
+        /* width: ; */
 
         .contain1__create{
         
+            /* border: black solid; */
             display: flex;
+            gap: 156px;
+            margin-bottom: 77px;
 
             h2{
-
+                
                 font-size: 48px;
                 line-height: 120%;
                 text-decoration: underline solid;
@@ -41,12 +52,16 @@
 
         .contain2__create{
 
+            /* border: black solid; */
             display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 136px;
 
             .imgcontent{
 
                 width: 104px;
                 height: 104px;
+                margin-bottom: 27px;
 
             }
 
@@ -55,6 +70,7 @@
                 font-size: 48px;
                 line-height: 120%;
                 color: var(--color-black);
+                margin-bottom: 35px;
 
             }
 
