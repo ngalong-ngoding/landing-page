@@ -13,6 +13,7 @@
 
     /* color text */
     --color-black-100: #000000;
+    --color-black-200: rgba(0, 0, 0, 0.2);
 
     /* font-weight */
     --weight-reguler: 400;
@@ -508,4 +509,98 @@
 
     }
 
+}
+
+/* build authority */
+.build-authority {
+    background-image: url(images/cewe-bertiga.png);
+    max-width: 1919px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    margin: 124px 0;
+
+    .build-authority__feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+
+        .build-authority__feature-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 21px;
+            text-align: center;
+            position: relative;
+
+            .build-authority__feature-title {
+                font-family: var(--font-montserrat);
+                font-size: 50px;
+                line-height: 150%;
+                font-weight: var(--weight-bold);
+                color: var(--color-white-100);
+                max-width: 26ch;
+                text-align: center;
+            }
+
+            .build-authority__feature-description {
+                font-weight: var(--weight-medium);
+                font-family: var(--font-montserrat);
+                font-size: 22px;
+                line-height: 180%;
+                color: var(--color-white-100);
+                text-align: center;
+                max-width: 50ch;
+            }
+
+            .build-authority__feature-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: -500px;
+                bottom: -160px;
+
+                .feature-border {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .play-inner-circle {
+                        width: 152px;
+                        height: 152px;
+                        background-color: color-mix(in srgb, var(--color-accent-rust-orange) 25%, transparent);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: color-mix(in srgb, var(--color-accent-rust-orange) 40%, transparent);
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .feature__border-icon {
+                        width: 76px;
+                        height: 76px;
+                        background-color: var(--color-accent-rust-orange);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 15px var(--color-black-200);
+
+                        ion-icon {
+                            font-size: 32px;
+                            color: var(--color-white-100);
+                            padding-left: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
