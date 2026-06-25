@@ -67,6 +67,9 @@
             line-height: 100%;
             font-weight: var(--weight-medium);
             /* border: 2px; */
+            background-color: var(--color-white) ;
+            border-width: 2px;
+            color: var(--color-neutral-900gh);
         }
 
     }
