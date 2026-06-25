@@ -238,6 +238,7 @@ body {
             font-weight: var(--weight-bold);
             color: var(--color-black);
             text-decoration: underline;
+            text-align: left;
         }
     }
 
