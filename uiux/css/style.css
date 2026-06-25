@@ -190,3 +190,51 @@ body {
         }
     }
 }
+
+.latest {
+
+    .latest__container {
+        /* border: #000000 solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title{
+            font-weight: var(--weight-bold);
+            font-size: 48px;
+            line-height: 120%;
+            text-decoration: underline solid;
+            margin-bottom: 62px;
+
+        }
+
+        .latest__content {
+
+            justify-content: center;
+            /* border: black solid; */
+            display: flex;
+            gap: 30px;
+
+            .latest__img {
+
+                margin-bottom: 30px;
+            }
+
+            .date {
+                font-family: var(--font-caveat);
+                font-size: 16px;
+                line-height: 22px;
+                color: var(--color-black);
+                font-weight: var(--weight-regular);
+                margin-bottom: 12px;
+            }
+
+            .article {
+                font-weight: var(--weight-semibold);
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+
+}
