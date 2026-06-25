@@ -62,7 +62,7 @@
 }
 
 .portofolio__container {
-  /* border: solid white; */
+  /* border: solid greenyellow; */
   background-color: var(--color-primary);
   color: var(--color-white);
   font-family: var(--font-lato);
@@ -71,8 +71,10 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  min-height: 100vh;
 
   .portofolio__content {
+    /* border: solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +103,11 @@
     
     .portofolio__content-image {
       /* border: solid yellow; */
-      width: 1200px;
+      width: 900px;
+
+      img {
+        width: 296px;
+      }
     }
 
     .btn-portofolio {
@@ -110,6 +116,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 146px;
+      height: 56px;
     }
   }
 }
