@@ -72,6 +72,7 @@
   align-items: center;
   padding: 20px;
   min-height: 100vh;
+  min-width: 100vh;
 
   .portofolio__content {
     /* border: solid red; */
@@ -102,7 +103,7 @@
     }
     
     .portofolio__content-image {
-      border: solid yellow;
+      /* border: solid yellow; */
       width: 900px;
 
       img {
@@ -118,6 +119,42 @@
       align-items: center;
       width: 146px;
       height: 56px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portofolio__container {
+    border: solid white;
+    /* width: 1000px; */
+    padding: 30px;
+    height: auto;
+    min-height: 181vh;
+
+    .portofolio__content {
+      border: solid red;
+      gap: 50px;
+
+      .title__container {
+        border: solid yellow;
+
+        .title {
+          border: solid orange;
+        }
+
+        .description {
+          border: solid pink;
+        }
+      }
+
+      .portofolio__content-image {
+        border:  solid greenyellow;
+        width: 700px;
+
+        img {
+          width: 345px;
+        }
+      }
     }
   }
 }
