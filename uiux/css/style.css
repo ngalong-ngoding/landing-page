@@ -12,7 +12,7 @@
     --color-lime-400: #C0EF37;
     --color-lime-300: #CAEF46;
     --color-amber-500: #EE9E00;
-    --color-orange-50: #FEF1E7;
+    --color-orange-50: #FEF1E8;
     --color-white: #FFFFFF;
     --color-white-50: #FFFFFF80;
 }
@@ -20,6 +20,12 @@
 /* Component class */
 body {
     font-family: var(--font-space-grotesk);
+}
+
+.container {
+    padding: 0px 32px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -188,5 +194,99 @@ body {
                 }
             }
         }
+    }
+}
+
+/* Reviews */
+.reviews {
+    padding-block: 150px;
+    background-color: var(--color-orange-50);
+    position: relative;
+
+    .reviews__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 46px;
+
+        .reviews__header-title {
+            font-size: 48px;
+            font-weight: var(--weight-bold);
+            text-decoration: underline;
+            color: var(--color-black);
+        }
+    }
+
+    .reviews__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: start;
+
+        .reviews__card {
+            border: 2px solid var(--color-neutral-900);
+            padding: 30px;
+            background-color: var(--color-white);
+
+            &.reviews__card--offset-top {
+                margin-top: 30px;
+            }
+
+            .reviews__card-stars {
+                display: flex;
+                gap: 4px;
+                color: var(--color-amber-500);
+                margin-bottom: 30px;
+            }
+
+            .reviews__card-body {
+                font-family: var(--font-dm-sans);
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 40px;
+                text-align: justify;
+            }
+
+            .reviews__card-author {
+                display: flex;
+                gap: 16px;
+
+                .reviews__card-author-img {
+                    width: 43px;
+                }
+
+                .reviews__card-author-profile {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .reviews__card-author-name {
+                        font-size: 16px;
+                        font-weight: var(--weight-semibold);
+                        color: var(--color-neutral-900);
+                    }
+
+                    .reviews__card-author-role {
+                        font-size: 14px;
+                        font-weight: var(--weight-regular);
+                        color: var(--color-neutral-900-80);
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews__ellipse-purple {
+        position: absolute;
+        top: -4rem;
+        right: 0;
+        width: 15rem;
+    }
+
+    .reviews__ellipse-orange {
+        position: absolute;
+        bottom: -4rem;
+        left: 0;
+        width: 15rem;
     }
 }
