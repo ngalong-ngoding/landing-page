@@ -102,7 +102,7 @@
     }
     
     .portofolio__content-image {
-      /* border: solid yellow; */
+      border: solid yellow;
       width: 900px;
 
       img {
