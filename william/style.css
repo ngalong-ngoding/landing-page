@@ -119,6 +119,13 @@
 
     .footer__header {
       background-color: var(--color-secondary-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .footer__header-icon{
+        
+      }
     }
   }
 }
