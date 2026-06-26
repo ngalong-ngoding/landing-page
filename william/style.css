@@ -71,6 +71,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  height: max-content;
   min-height: 100vh;
   min-width: 100vh;
 
@@ -101,7 +102,7 @@
         text-align: center;
       }
     }
-    
+
     .portofolio__content-image {
       /* border: solid yellow; */
       width: 900px;
@@ -125,30 +126,18 @@
 
 @media (max-width: 768px) {
   .portofolio__container {
-    border: solid white;
-    /* width: 1000px; */
     padding: 30px;
-    height: auto;
+
     min-height: 181vh;
 
     .portofolio__content {
-      border: solid red;
       gap: 50px;
 
       .title__container {
-        border: solid yellow;
-
-        .title {
-          border: solid orange;
-        }
-
-        .description {
-          border: solid pink;
-        }
+        gap: 20px;
       }
 
       .portofolio__content-image {
-        border:  solid greenyellow;
         width: 700px;
 
         img {
