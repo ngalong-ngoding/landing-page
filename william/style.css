@@ -361,6 +361,73 @@
   }
 }
 
+
+
+/* CLASS PORTOFOLIO */
+.portofolio__container {
+  /* border: solid greenyellow; */
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: max-content;
+  min-height: 100vh;
+  min-width: 100vh;
+
+  .portofolio__content {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 67px;
+
+    .title__container {
+      /* border: solid yellow; */
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+
+      .title {
+        font-size: 56px;
+        font-weight: var(--weight-bold);
+        width: 535px;
+      }
+
+      .description {
+        /* border: solid red; */
+        font-size: 18px;
+        font-family: var(--font-work-sans);
+        width: 550px;
+        text-align: center;
+      }
+    }
+
+    .portofolio__content-image {
+      /* border: solid yellow; */
+      width: 900px;
+
+      img {
+        width: 296px;
+      }
+    }
+
+    .btn-portofolio {
+      font-family: var(--font-work-sans);
+      font-weight: var(--weight-medium);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 146px;
+      height: 56px;
+    }
+  }
+}
+
+
 /* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
   .navbar__container {
@@ -374,14 +441,14 @@
     width: 910px;
     padding-left: 20;
 
-  .hero__content-title {
-    padding: 30px;
-  }
+    .hero__content-title {
+      padding: 30px;
+    }
 
     .hero__title {
       width: 200px;
       height: 200px;
-    }  
+    }
   }
 
   .nav__sosmed {
@@ -399,14 +466,36 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      
+
       .solving__role-container {
         width: 700px;
       }
 
       .solving__problems-description-container {
         width: 700px;
-        
+
+      }
+    }
+  }
+
+  .portofolio__container {
+    padding: 30px;
+    width: 910px;
+    min-height: 181vh;
+
+    .portofolio__content {
+      gap: 50px;
+
+      .title__container {
+        gap: 20px;
+      }
+
+      .portofolio__content-image {
+        width: 700px;
+
+        img {
+          width: 345px;
+        }
       }
     }
   }
