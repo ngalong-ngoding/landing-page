@@ -9,6 +9,7 @@
   /* Neutral Colors */
   --color-white: #ffffff;
   --color-white-1: #f1f1f1;
+  --color-silver: #e2e2e2;
   --color-black: #000000;
   --color-gray-100: #181818;
   --color-gray-150: #1d2027;
@@ -112,19 +113,91 @@
 .footer {
   background-color: var(--color-black);
   color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  align-items: center;
 
   .footer__container {
     display: flex;
     justify-content: space-between;
+    gap: 85px;
+    width: 895px;
+    margin: 0 auto;
+    align-items: flex-start;
 
-    .footer__header {
-      background-color: var(--color-secondary-light);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .footer__content {
+      width: 280px;
 
-      .footer__header-icon{
-        
+      .footer__content-header {
+        background-color: var(--color-secondary-light);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        margin-bottom: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer__icon {
+          color: var(--color-black);
+        }
+      }
+
+      p {
+        font-family: var(--font-open-sans);
+        font-weight: var(--weight-light);
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    .card__newsletter {
+      width: 280px;
+      h2 {
+        font-family: var(--font-open-sans);
+        font-weight: var(--weight-light);
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: 1px;
+        margin-bottom: 36px;
+      }
+      input {
+        width: 280px;
+        height: 61px;
+        background: transparent;
+        border: 1px solid var(--color-silver);
+        color: var(--color-white);
+        padding: 0 16px;
+        outline: none;
+
+        &::placeholder {
+          color: var(--color-white);
+          font-family: var(--font-work-sans);
+          font-weight: var(--weight-light);
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .card__follow {
+      width: 180px;
+
+      h2 {
+        font-family: var(--font-open-sans);
+        font-weight: var(--weight-light);
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: 1px;
+        margin-top: 24px;
+        margin-bottom: 27px;
+      }
+
+      .card__follow-icon {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 20px;
       }
     }
   }
