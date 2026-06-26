@@ -108,4 +108,26 @@
       gap: 100px;
     }
   }
+
+  .portofolio__container {
+    padding: 30px;
+    width: 910px;
+    min-height: 181vh;
+
+    .portofolio__content {
+      gap: 50px;
+
+      .title__container {
+        gap: 20px;
+      }
+
+      .portofolio__content-image {
+        width: 700px;
+
+        img {
+          width: 345px;
+        }
+      }
+    }
+  }
 }
