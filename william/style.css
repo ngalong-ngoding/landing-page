@@ -64,50 +64,6 @@
   }
 }
 
-/* CLIENTS */
-.clients {
-  background-color: var(--color-gray-150);
-
-  .clients__container {
-    width: 895px;
-    margin: 0 auto;
-    padding: 68px 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 70px;
-
-    .clients__title {
-      width: 391px;
-
-      h2 {
-        color: var(--color-white);
-        font-family: var(--font-lato);
-        font-weight: var(--weight-bold);
-        font-size: 30px;
-        line-height: 100%;
-        margin-bottom: 11px;
-        white-space: nowrap;
-      }
-
-      p {
-        color: var(--color-white-1);
-        font-family: var(--font-open-sans);
-        font-weight: var(--weight-light);
-        font-size: 18px;
-        line-height: 30px;
-        word-spacing: 1px;
-      }
-    }
-
-    .clients__brands {
-      display: flex;
-      align-items: center;
-      gap: 129px;
-    }
-  }
-}
 
 /* footer */
 .footer {
