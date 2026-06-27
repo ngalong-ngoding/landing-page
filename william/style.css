@@ -446,8 +446,6 @@
   }
 }
 
-
-
 /* CLASS PORTOFOLIO */
 .portofolio__container {
   /* border: solid greenyellow; */
@@ -555,19 +553,31 @@
 
       .prople__card {
         /* border: solid turquoise; */
-        
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
         .prople__card-paragraph {
           /* border: solid pink; */
           background-color: var(--color-gray-150);
           display: flex;
+          gap: 14px;
+          padding: 20px 8px;
 
           p {
-            width: 400px;
+            width: 460px;
             font-family: var(--font-inter);
+            margin-top: 12px;
+            margin-bottom: 20px;
           }
 
           i {
-            color: var(--color-secondary);
+            color: var(--color-secondary-light);
+            font-size: 25px;
+          }
+
+          .kutip-tutup {
+            rotate: 180deg;
           }
         }
       }
@@ -577,6 +587,21 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        .prople__card-member-name-container {
+          
+          .prople__card-name {
+            font-family: var(--font-gelasio);
+            font-weight: var(--weight-semibold);
+            font-size: 20px;
+          }
+
+          .prople__card-paragraph {
+            font-family: var(--font-inter);
+            font-weight: var(--weight-regular);
+            font-size: 14px;
+          }
+        }
       }
     }
 
@@ -584,10 +609,29 @@
       display: flex;
       gap: 10px;
     }
-    .prople__slide {
-      border: 1px solid white ;
+
+    .prople__slide-active {
+      border: none;
+      background-color: var(--color-secondary);
       width: 22px;
       height: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
+    }
+
+    .prople__slide {
+      border: 1px solid white;
+      background-color: var(--color-black);
+      width: 22px;
+      height: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
     }
   }
 }
