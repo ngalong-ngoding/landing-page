@@ -512,6 +512,85 @@
   }
 }
 
+/* CLASS PROPLE SAY */
+.prople__container {
+  /* border: solid red; */
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+  .prople__content {
+    /* border: solid yellow; */
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+
+    .prople__content-title {
+      /* border: solid green; */
+      width: 528px;
+      text-align: center;
+
+      .prople__title {
+        font-family: var(--font-lato);
+        font-size: 56px;
+        font-weight: var(--weight-bold);
+      }
+
+      .prople__description {
+        font-family: var(--font-work-sans);
+        font-size: 18px;
+        font-weight: var(--weight-regular);
+      }
+    }
+
+    .prople__content-card {
+      /* border: solid blueviolet; */
+      /* width: 1170px; */
+      display: flex;
+      gap: 30px;
+
+      .prople__card {
+        /* border: solid turquoise; */
+        
+        .prople__card-paragraph {
+          /* border: solid pink; */
+          background-color: var(--color-gray-150);
+          display: flex;
+
+          p {
+            width: 400px;
+            font-family: var(--font-inter);
+          }
+
+          i {
+            color: var(--color-secondary);
+          }
+        }
+      }
+
+      .prople__card-member {
+        /* border: solid orange; */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+
+    .prople__slide-container {
+      display: flex;
+      gap: 10px;
+    }
+    .prople__slide {
+      border: 1px solid white ;
+      width: 22px;
+      height: 6px;
+    }
+  }
+}
 
 /* CLIENTS */
 .clients {
