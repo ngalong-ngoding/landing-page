@@ -446,8 +446,6 @@
   }
 }
 
-
-
 /* CLASS PORTOFOLIO */
 .portofolio__container {
   /* border: solid greenyellow; */
@@ -512,6 +510,131 @@
   }
 }
 
+/* CLASS PROPLE SAY */
+.prople__container {
+  /* border: solid red; */
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+  .prople__content {
+    /* border: solid yellow; */
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+
+    .prople__content-title {
+      /* border: solid green; */
+      width: 528px;
+      text-align: center;
+
+      .prople__title {
+        font-family: var(--font-lato);
+        font-size: 56px;
+        font-weight: var(--weight-bold);
+      }
+
+      .prople__description {
+        font-family: var(--font-work-sans);
+        font-size: 18px;
+        font-weight: var(--weight-regular);
+      }
+    }
+
+    .prople__content-card {
+      /* border: solid blueviolet; */
+      /* width: 1170px; */
+      display: flex;
+      gap: 30px;
+
+      .prople__card {
+        /* border: solid turquoise; */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .prople__card-paragraph {
+          /* border: solid pink; */
+          background-color: var(--color-gray-150);
+          display: flex;
+          gap: 14px;
+          padding: 20px 8px;
+
+          p {
+            width: 460px;
+            font-family: var(--font-inter);
+            margin-top: 12px;
+            margin-bottom: 20px;
+          }
+
+          i {
+            color: var(--color-secondary-light);
+            font-size: 25px;
+          }
+
+          .kutip-tutup {
+            rotate: 180deg;
+          }
+        }
+      }
+
+      .prople__card-member {
+        /* border: solid orange; */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .prople__card-member-name-container {
+          
+          .prople__card-name {
+            font-family: var(--font-gelasio);
+            font-weight: var(--weight-semibold);
+            font-size: 20px;
+          }
+
+          .prople__card-paragraph {
+            font-family: var(--font-inter);
+            font-weight: var(--weight-regular);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .prople__slide-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .prople__slide-active {
+      border: none;
+      background-color: var(--color-secondary);
+      width: 22px;
+      height: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
+    }
+
+    .prople__slide {
+      border: 1px solid white;
+      background-color: var(--color-black);
+      width: 22px;
+      height: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}
 
 /* CLIENTS */
 .clients {
